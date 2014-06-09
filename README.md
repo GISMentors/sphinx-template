@@ -1,1 +1,2 @@
-GISMentor's template for Sphinx
+GISMentor's Sphinx template
+===========================
