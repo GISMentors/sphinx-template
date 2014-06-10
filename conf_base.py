@@ -86,10 +86,6 @@ pygments_style = 'sphinx'
 
 # -- Options for HTML output ----------------------------------------------
 
-# The name for this set of Sphinx documents.  If None, it defaults to
-# "<project> v<release> documentation".
-html_title = project
-
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
@@ -120,7 +116,7 @@ html_theme = 'agogo'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ['../sphinx-template/_static', '_static']
 html_style = 'gismentors.css'
 
 # Add any extra paths that contain custom files (such as robots.txt or
@@ -171,14 +167,6 @@ html_style = 'gismentors.css'
 
 # -- Options for LaTeX output ---------------------------------------------
 
-# Grouping the document tree into LaTeX files. List of tuples
-# (source start file, target name, title,
-#  author, documentclass [howto, manual, or own class]).
-latex_documents = [
-    ('index', '%s.tex' % htmlhelp_basename, project,
-     copyright, 'manual'),
-    ]
-
 latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
 #'papersize': 'letterpaper',
@@ -213,26 +201,10 @@ latex_elements = {
 
 # -- Options for manual page output ---------------------------------------
 
-# One entry per manual page. List of tuples
-# (source start file, name, description, authors, manual section).
-man_pages = [
-    ('index', htmlhelp_basename, project,
-     [copyright], 1)
-    ]
-
 # If true, show URL addresses after external links.
 #man_show_urls = False
 
 # -- Options for Texinfo output -------------------------------------------
-
-# Grouping the document tree into Texinfo files. List of tuples
-# (source start file, target name, title, author,
-#  dir menu entry, description, category)
-texinfo_documents = [
-    ('index', htmlhelp_basename, project,
-     copyright, htmlhelp_basename, project,
-     'Miscellaneous'),
-    ]
 
 # Documents to append as an appendix to all manuals.
 #texinfo_appendices = []
