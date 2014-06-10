@@ -3,7 +3,7 @@
 import sys
 import os
 
-sys.path.insert(0, os.path.join('..', 'sphinx_template'))
+sys.path.insert(0, os.path.join('..', 'sphinx-template'))
 from conf_base import *
 
 # -- General configuration ------------------------------------------------
