@@ -27,6 +27,6 @@ Example for Bash and GRASS-GIS repository
 
 6. Modify `conf.py` in `<repo>`
 
-7. Goto to <repo> and build
+7. Goto to `<repo>` and build
 
         cd ${repo} && make html
