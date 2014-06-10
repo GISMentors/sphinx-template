@@ -21,11 +21,11 @@ Example for Bash and GRASS-GIS repository
 
         cp sphinx-template/conf.py ${repo}
 
-4. Modify background images (`bgtop.png` and `bgfooter.png`) in <repo>
+4. Modify background images (`bgtop.png` and `bgfooter.png`) in `<repo>`
 
-5. Modify `gismentors.css` in <repo>
+5. Modify `gismentors.css` in `<repo>`
 
-6. Modify `conf.py` in <repo>
+6. Modify `conf.py` in `<repo>`
 
 7. Goto to <repo> and build
 
