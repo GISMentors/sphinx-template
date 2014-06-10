@@ -7,15 +7,15 @@ Example for Bash and GRASS-GIS repo
 
 1. Download GIT repositories:
 
-   git clone git@github.com:GISMentors/sphinx-template.git
-   git clone git@github.com:GISMentors/${repo}.git
+        git clone git@github.com:GISMentors/sphinx-template.git
+        git clone git@github.com:GISMentors/${repo}.git
 
 2. Copy selected files from '_static' directory
 
-   cp sphinx-template/_static/bgtop.png \
-      sphinx-template/_static/bgfooter.png \
-      sphinx-template/_static/gismentors.css \
-      ${repo}/_static
+        cp sphinx-template/_static/bgtop.png \
+         sphinx-template/_static/bgfooter.png \
+         sphinx-template/_static/gismentors.css \
+         ${repo}/_static
 
 3. Modify background images (bgtop.png and bgfooter.png) in <repo>
 
@@ -23,6 +23,6 @@ Example for Bash and GRASS-GIS repo
 
 5. Copy conf.py
 
-   cp sphinx-template/conf.py ${repo}
+        cp sphinx-template/conf.py ${repo}
 
 6. Modify conf.py
