@@ -6,7 +6,7 @@
  *
  */
 
-@import url("../sphinx-template/_static/gismentors_base.css");
+@import url("gismentors_base.css");
 
 a {
   color: #008f00;

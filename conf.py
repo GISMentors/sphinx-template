@@ -57,5 +57,5 @@ texinfo_documents = [
      'Miscellaneous'),
     ]
 
-sys.path.insert(0, os.path.join('..', 'sphinx-template'))
+sys.path.append(os.path.join('..', 'sphinx-template'))
 from conf_base import *
