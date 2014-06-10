@@ -1,7 +1,7 @@
 GISMentor's Sphinx template
 ===========================
 
-Example for Bash and GRASS-GIS repo
+Example for Bash and GRASS-GIS repository
 
     export repo=GRASS-GIS
 
