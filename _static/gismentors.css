@@ -1,0 +1,13 @@
+/*
+ * gismentors.css
+ * ~~~~~~~~~~~~~~
+ *
+ * Customized GISMentors stylesheet
+ *
+ */
+
+@import url("../sphinx-template/_static/gismentors_base.css");
+
+a {
+  color: #008f00;
+}
