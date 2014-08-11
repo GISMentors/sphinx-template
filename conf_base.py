@@ -230,4 +230,7 @@ rst_prolog = """
    :class: admonition.cmd
 
 .. role:: fignote
+
+.. role:: secnotoc
+    :class: secnotoc
 """

@@ -487,3 +487,14 @@ span.map {
 .toc th { color: #7b7b7b; }
 
 .fignote { color: #db5252; }
+
+.rubric > .secnotoc {
+  font-family: "Verdana", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 130%; 
+  color: #7b7b7b;
+  margin-bottom: .8em;
+  border-bottom: 1px solid #7b7b7b;
+  margin-top: .8em;
+  display:block;
+}
