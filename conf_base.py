@@ -30,7 +30,8 @@ import os
 # ones.
 extensions = [ 'sphinx.ext.extlinks']
 extlinks = {'grasscmd': ('http://grass.osgeo.org/grass70/manuals/%s.html', ''),
-            'wikipedia': ('http://cs.wikipedia.org/wiki/%s', '') }
+            'wikipedia': ('http://cs.wikipedia.org/wiki/%s', ''),
+            'wikipedia-en': ('http://en.wikipedia.org/wiki/%s', '') }
 
 
 # Add any paths that contain templates here, relative to this directory.
