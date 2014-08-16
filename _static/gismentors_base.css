@@ -484,6 +484,10 @@ span.map {
     font-family: monospace;   
 }
 
+span.item {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;
+}
+
 .toc, .toc tr, .toc th, .toc td { border: none; } 
 .toc th { color: #7b7b7b; }
 

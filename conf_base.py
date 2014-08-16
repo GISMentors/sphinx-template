@@ -233,4 +233,7 @@ rst_prolog = """
 
 .. role:: secnotoc
     :class: secnotoc
+
+.. role:: item
+    :class: item
 """
