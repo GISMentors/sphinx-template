@@ -220,6 +220,17 @@ latex_elements = {
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
 
+# -- Bootstrap Theme options -------------------------------------------
+
+
+html_theme_options = {
+    'navbar_site_name': "Obsah",
+    'navbar_pagenav': False,
+    'globaltoc_depth': 2,
+}
+
+# -- GISMentors roles -------------------------------------------
+
 rst_prolog = """
 .. role:: map
    :class: map
