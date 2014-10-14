@@ -107,7 +107,9 @@ dt:hover > a.headerlink {
 
 img {
   border: 0;
-  width: 480px; /*** new ***/
+  margin-top: 5px;     /*** new ***/
+  margin-bottom: 5px;  /*** new ***/
+  width: 480px;        /*** new ***/
 }
 
 div.admonition {
