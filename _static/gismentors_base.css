@@ -494,6 +494,11 @@ div.figure {
 
 img.middle {
   border: 0;
+  width:600px;
+}
+
+img.large {
+  border: 0;
   width:800px;
 }
 
@@ -501,14 +506,19 @@ span.map {
   font-family: "Brush Script MT", cursive;
 }
 
-span.item {
+span.item, span.key {
   font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;
-  background-color: #d4d0c8;
+  background-color: #dddddd;
   padding: 3px;
+  font-size: 90%;
 }
 
-.toc, .toc tr, .toc th, .toc td { border: none; } 
-.toc th { color: #7b7b7b; }
+.noborder, .noborder tr, .noborder th, .noborder td { border: none; } 
+.noborder th { color: #7b7b7b; }
+
+table.border { margin-top: 5px; margin-bottom: 5px; }
+.border, .border tr, .border th, .border td { border: 1px solid #7b7b7b;  border-collapse: collapse; padding: 3px } 
+.border th { background-color: #dddddd; }
 
 .fignote { color: #db5252; }
 

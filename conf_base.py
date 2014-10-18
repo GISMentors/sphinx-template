@@ -249,4 +249,7 @@ rst_prolog = """
 
 .. role:: item
     :class: item
+
+.. role:: key
+    :class: key
 """
