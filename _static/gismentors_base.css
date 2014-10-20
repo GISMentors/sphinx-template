@@ -502,11 +502,16 @@ img.large {
   width:800px;
 }
 
+img.small {
+  border: 0;
+  width:250px;
+}
+
 span.map {
   font-family: "Brush Script MT", cursive;
 }
 
-span.item, span.key {
+span.item {
   font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;
   background-color: #dddddd;
   padding: 3px;
@@ -515,6 +520,9 @@ span.item, span.key {
 
 .noborder, .noborder tr, .noborder th, .noborder td { border: none; } 
 .noborder th { color: #7b7b7b; }
+
+.toc, .toc tr, .toc th { border: none; color: #7b7b7b; } 
+.toc td { border: none; width: 50%; }
 
 table.border { margin-top: 5px; margin-bottom: 5px; }
 .border, .border tr, .border th, .border td { border: 1px solid #7b7b7b;  border-collapse: collapse; padding: 3px } 

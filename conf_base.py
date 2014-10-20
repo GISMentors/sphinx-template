@@ -236,9 +236,6 @@ rst_prolog = """
 .. role:: map
    :class: map
 
-.. role:: param
-   :class: docutils literal
-
 .. role:: notecmd
    :class: admonition.cmd
 
@@ -249,7 +246,4 @@ rst_prolog = """
 
 .. role:: item
     :class: item
-
-.. role:: key
-    :class: key
 """
