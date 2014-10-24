@@ -15,9 +15,11 @@
             :width: 560
             :align: left
 
-    :copyright: (c) 2012 by Danilo Bargen.
+    :copyright: (c) 2012 by Danilo Bargen
     :license: BSD 3-clause
     :url: https://gist.github.com/dbrgn/2922648
+
+    Modified by Martin Landa
 """
 from __future__ import absolute_import
 from docutils import nodes
@@ -30,7 +32,7 @@ def align(argument):
 
 
 class IframeVideo(Directive):
-    has_content = False
+    has_content = True
     required_arguments = 1
     optional_arguments = 0
     final_argument_whitespace = False
@@ -39,8 +41,8 @@ class IframeVideo(Directive):
         'width': directives.nonnegative_int,
         'align': align,
     }
-    default_width = 500
-    default_height = 281
+    default_width = 700
+    default_height = 360
 
     def run(self):
         self.options['video_id'] = directives.uri(self.arguments[0])
@@ -49,15 +51,19 @@ class IframeVideo(Directive):
         if not self.options.get('height'):
             self.options['height'] = self.default_height
         if not self.options.get('align'):
-            self.options['align'] = 'left'
+            self.options['align'] = 'center'
+        if not self.options.get('caption'):
+            self.options['caption'] = ''.join(self.content)
+# ML
+#            self.options['align'] = 'left'
         return [nodes.raw('', self.html % self.options, format='html')]
 
 
 class Youtube(IframeVideo):
-    html = '<iframe src="http://www.youtube.com/embed/%(video_id)s" \
+    html = '<div style="text-align: %(align)s"><iframe src="http://www.youtube.com/embed/%(video_id)s" \
     width="%(width)u" height="%(height)u" frameborder="0" \
     webkitAllowFullScreen mozallowfullscreen allowfullscreen \
-    class="align-%(align)s"></iframe>'
+    class="align-%(align)s"></iframe><div style="margin-top: 5px"><i>%(caption)s</i></div></div>'
 
 
 class Vimeo(IframeVideo):
