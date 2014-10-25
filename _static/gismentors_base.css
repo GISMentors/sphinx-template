@@ -120,7 +120,7 @@ div.admonition {
 }
 
 p.admonition-title {
-  margin: 0px 10px 5px 0px;
+  margin: 0px 10px 5px 25px;
   font-weight: bold;
 }
 
@@ -539,4 +539,10 @@ table.border { margin-top: 5px; margin-bottom: 5px; }
   border-bottom: 1px solid #7b7b7b;
   margin-top: .8em;
   display:block;
+}
+
+.notecmd {
+    background-image: url(cmd.png);
+    background-repeat:no-repeat;
+    background-position: 5px 1px;
 }
