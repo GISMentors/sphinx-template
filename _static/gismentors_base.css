@@ -558,3 +558,9 @@ table.border { margin-top: 5px; margin-bottom: 5px; }
     background-repeat:no-repeat;
     background-position: 5px 1px;
 }
+
+.important {
+    background-image: url(important.png);
+    background-repeat:no-repeat;
+    background-position: 5px 1px;
+}
