@@ -546,3 +546,15 @@ table.border { margin-top: 5px; margin-bottom: 5px; }
     background-repeat:no-repeat;
     background-position: 5px 1px;
 }
+
+.warning {
+    background-image: url(warning.png);
+    background-repeat:no-repeat;
+    background-position: 5px 1px;
+}
+
+.note {
+    background-image: url(note.png);
+    background-repeat:no-repeat;
+    background-position: 5px 1px;
+}
