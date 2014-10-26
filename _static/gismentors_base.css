@@ -521,7 +521,8 @@ span.item {
 .noborder, .noborder tr, .noborder th, .noborder td { border: none; } 
 .noborder th { color: #7b7b7b; }
 
-.toc, .toc tr, .toc th { border: none; color: #7b7b7b; } 
+.toc, .toc table { border: none; width: 100%; }
+.toc tr, .toc th { border: none; width: 50%; color: #7b7b7b; } 
 .toc td { border: none; width: 50%; }
 
 table.border { margin-top: 5px; margin-bottom: 5px; }
