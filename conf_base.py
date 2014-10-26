@@ -231,6 +231,8 @@ latex_elements = {
 #     'globaltoc_depth': 2,
 # }
 
+todo_include_todos = True
+
 # -- GISMentors roles -------------------------------------------
 
 rst_prolog = """
