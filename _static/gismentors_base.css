@@ -531,10 +531,10 @@ table.border { margin-top: 5px; margin-bottom: 5px; }
 
 .fignote { color: #db5252; }
 
-.rubric > .secnotoc {
+.secnotoc, .rubric > .secnotoc {
   font-family: "Verdana", Arial, sans-serif;
   font-weight: normal;
-  font-size: 130%; 
+  font-size: 110%; 
   color: #7b7b7b;
   margin-bottom: .8em;
   border-bottom: 1px solid #7b7b7b;
