@@ -572,6 +572,12 @@ table.border { margin-top: 5px; margin-bottom: 5px; }
     background-position: 5px 1px;
 }
 
+.noteadvanced {
+    background-image: url(advanced.png);
+    background-repeat:no-repeat;
+    background-position: 5px 1px;
+}
+
 .admonition-todo {
     background-image: url(todo.png);
     background-repeat:no-repeat;

@@ -22,6 +22,16 @@ class NoteGRASS6(directives.admonitions.BaseAdmonition):
         self.arguments.append(u'Poznámka pro GRASS GIS verze 6')
         return super(NoteGRASS6, self).run()
 
+class NoteAdvanced(directives.admonitions.BaseAdmonition):
+    required_arguments = 0
+    node_class = nodes.admonition
+
+    def run(self):
+        self.options['classes'] = ['noteadvanced']
+        self.arguments.append(u'Poznámka pro pokročilé')
+        return super(NoteAdvanced, self).run()
+
 def setup(builder):
     directives.register_directive('notecmd', NoteCmd)
     directives.register_directive('notegrass6', NoteGRASS6)
+    directives.register_directive('noteadvanced', NoteAdvanced)
