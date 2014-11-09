@@ -566,6 +566,12 @@ table.border { margin-top: 5px; margin-bottom: 5px; }
     background-position: 5px 1px;
 }
 
+.tip {
+    background-image: url(tip.png);
+    background-repeat:no-repeat;
+    background-position: 5px 1px;
+}
+
 .notegrass6 {
     background-image: url(notegrass6.png);
     background-repeat:no-repeat;
