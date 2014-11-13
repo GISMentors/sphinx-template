@@ -3,7 +3,7 @@ GISMentor's Sphinx template
 
 Example for Bash and GRASS-GIS repository
 
-    export repo=GRASS-GIS
+    export repo=grass-gis
 
 1. Download GIT repositories:
 
