@@ -10,7 +10,7 @@ class NoteCmd(directives.admonitions.BaseAdmonition):
 
     def run(self):
         self.options['classes'] = ['notecmd']
-        self.arguments[0] = u'Příklad ' + self.arguments[0] + u' z příkazové řádky'
+        self.arguments[0] = self.arguments[0] + u' z příkazové řádky'
         return super(NoteCmd, self).run()
 
 class NoteGRASS6(directives.admonitions.BaseAdmonition):
