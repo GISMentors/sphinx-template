@@ -1,27 +1,33 @@
 # source: https://gist.github.com/kroger/3856821
+# customization by Martin Landa
 
 import os
 from docutils import nodes
 from docutils.parsers.rst import directives
-from docutils.parsers.rst.directives.images import Image
+from docutils.parsers.rst.directives.images import Figure
 
 
 def find_image(path, filename):
-    fname = os.path.join(path, filename)
-    if os.path.exists(fname + '.pdf'):
-        return fname + '.pdf'
-    elif os.path.exists(fname + '.png'):
-        return fname + '.png'
-    else:
-        return False
+    dirs = [os.path.join(path,o) for o in os.listdir(path) if os.path.isdir(os.path.join(path,o))]
+    for path in dirs:
+        fname = os.path.join(path, filename)
+        if os.path.exists(fname + '.pdf'):
+            return fname + '.pdf'
+        elif os.path.exists(fname + '.png'):
+            return fname + '.png'
+        elif os.path.exists(fname):
+            return filename
+        
+    return False
         
 
-class Autoimage(Image):
+class Autoimage(Figure):
     option_spec = {'scale-html': directives.percentage,
                    'scale-latex': directives.percentage,
                    'scale-epub2': directives.percentage,
                    'scale-mobi': directives.percentage,
                    'scale': directives.percentage,
+                   'class': directives.class_option,
                    }
 
     def run(self):
@@ -36,20 +42,27 @@ class Autoimage(Image):
                 if bw_image:
                     self.arguments[0] = bw_image
         else:
-            self.arguments[0] = os.path.join(env.config.image_dir, old_filename + '.png')
+            self.arguments[0] = find_image(env.config.image_dir, old_filename)
 
         # this doesn't quite work because sphinx stores the previous
         # values and share among builds. If I do a make clean between
         # each run it works. Yuck.
         # I need to run sphinx-build with -E
-        self.options['scale'] = self.options.get('scale-' + builder_name, 100)
-        self.options['align'] = 'center'
-
+        if builder_name == 'latex':
+            classname = self.options.get('class', [''])[0]
+            if classname == 'middle':
+                self.options['scale'] = 80
+            elif classname == 'large':
+                self.options['scale'] = 100
+            else:
+                self.options['scale'] = self.options.get('scale-' + builder_name, 60)
+                
+            self.options['align'] = 'center'
         return super(Autoimage, self).run()
 
 
 def setup(app):
-    app.add_directive('autoimage', Autoimage)
-    app.add_config_value('image_dir', 'figs', False)
+    app.add_directive('figure', Autoimage)
+    app.add_config_value('image_dir', '.', False)
     app.add_config_value('black_and_white', False, True)
     app.add_config_value('image_dir_black_white', 'figs-bw', False)

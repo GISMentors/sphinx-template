@@ -29,7 +29,7 @@ import os
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 sys.path.append(os.path.abspath(os.path.join('..', 'sphinx-template', '_extensions')))
-extensions = [ 'sphinx.ext.extlinks', 'sphinx.ext.todo', 'video', 'notes' ]
+extensions = [ 'sphinx.ext.extlinks', 'sphinx.ext.todo', 'video', 'notes', 'autoimage' ]
 extlinks = {'grasscmd': ('http://grass.osgeo.org/grass70/manuals/%s.html', ''),
             'wikipedia': ('http://cs.wikipedia.org/wiki/%s', ''),
             'wikipedia-en': ('http://en.wikipedia.org/wiki/%s', ''),
