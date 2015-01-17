@@ -9,6 +9,7 @@ from docutils.parsers.rst.directives.images import Figure
 
 def find_image(path, filename):
     dirs = [os.path.join(path,o) for o in os.listdir(path) if os.path.isdir(os.path.join(path,o))]
+    dirs.insert(0, '.')
     for path in dirs:
         fname = os.path.join(path, filename)
         if os.path.exists(fname + '.pdf'):
@@ -17,10 +18,13 @@ def find_image(path, filename):
             return fname + '.png'
         elif os.path.exists(fname):
             return filename
-        
+    
     return False
-        
 
+def align(argument):
+    """Conversion function for the "align" option."""
+    return directives.choice(argument, ('left', 'center', 'right'))
+       
 class Autoimage(Figure):
     option_spec = {'scale-html': directives.percentage,
                    'scale-latex': directives.percentage,
@@ -28,6 +32,7 @@ class Autoimage(Figure):
                    'scale-mobi': directives.percentage,
                    'scale': directives.percentage,
                    'class': directives.class_option,
+                   'align': align,
                    }
 
     def run(self):
@@ -50,14 +55,16 @@ class Autoimage(Figure):
         # I need to run sphinx-build with -E
         if builder_name == 'latex':
             classname = self.options.get('class', [''])[0]
-            if classname == 'middle':
+            if classname == 'small':
+                self.options['scale'] = 40
+            elif classname == 'middle':
                 self.options['scale'] = 80
             elif classname == 'large':
                 self.options['scale'] = 100
             else:
                 self.options['scale'] = self.options.get('scale-' + builder_name, 60)
                 
-            self.options['align'] = 'center'
+            self.options['align'] = self.options.get('align', 'center')
         return super(Autoimage, self).run()
 
 
