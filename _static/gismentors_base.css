@@ -78,15 +78,15 @@ h1, h2, h3, h4 {
   margin-bottom: .8em;
 }
 
-/***
 h1 {
-  color: #204a87;
+    /*** color: #204a87; ***/
+    border-bottom: 1px solid #7b7b7b;
 }
-***/
+
 
 h2 {
   padding-bottom: .1em; /*** .5em; ***/
-  border-bottom: 1px solid #7b7b7b; /*** #3465a4; ***/
+  /*** border-bottom: 1px solid #7b7b7b; -> #3465a4; ***/
 }
 
 a.headerlink {
@@ -229,6 +229,7 @@ div.document div.highlight {
 }
 
 div.document h2 {
+  font-size: 110%; /*** new ***/
   margin-top: .7em;
 }
 

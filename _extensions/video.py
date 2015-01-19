@@ -45,6 +45,9 @@ class IframeVideo(Directive):
     default_height = 360
 
     def run(self):
+        env = self.state.document.settings.env
+        builder_name = env.app.builder.name
+
         self.options['video_id'] = directives.uri(self.arguments[0])
         if not self.options.get('width'):
             self.options['width'] = self.default_width
@@ -56,6 +59,9 @@ class IframeVideo(Directive):
             self.options['caption'] = ''.join(self.content)
 # ML
 #            self.options['align'] = 'left'
+        if builder_name == 'latex':
+            return [nodes.raw('', self.latex % self.options, format='latex')]
+        
         return [nodes.raw('', self.html % self.options, format='html')]
 
 
@@ -64,7 +70,7 @@ class Youtube(IframeVideo):
     width="%(width)u" height="%(height)u" frameborder="0" \
     webkitAllowFullScreen mozallowfullscreen allowfullscreen \
     class="align-%(align)s"></iframe><div style="margin-top: 5px; margin-bottom: 5px"><i>%(caption)s</i></div></div>'
-
+    latex = '\\paragraph{YouTube: %(caption)s} \\url{http://www.youtube.com/embed/%(video_id)s}'
 
 class Vimeo(IframeVideo):
     html = '<iframe src="http://player.vimeo.com/video/%(video_id)s" \

@@ -55,14 +55,17 @@ class Autoimage(Figure):
         # I need to run sphinx-build with -E
         if builder_name == 'latex':
             classname = self.options.get('class', [''])[0]
-            if classname == 'small':
-                self.options['scale'] = 40
+            scale = self.options.get('scale-' + builder_name, -1)
+            if scale > 0:
+                self.options['scale'] = scale
+            elif classname == 'small':
+                self.options['scale'] = 50
             elif classname == 'middle':
                 self.options['scale'] = 80
             elif classname == 'large':
                 self.options['scale'] = 100
             else:
-                self.options['scale'] = self.options.get('scale-' + builder_name, 60)
+                self.options['scale'] = 55
                 
             self.options['align'] = self.options.get('align', 'center')
         return super(Autoimage, self).run()
