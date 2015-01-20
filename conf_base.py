@@ -171,7 +171,7 @@ html_show_sourcelink = False
 
 # -- Options for LaTeX output ---------------------------------------------
 
-latex_elements = {
+#latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
 #'papersize': 'letterpaper',
 
@@ -180,7 +180,7 @@ latex_elements = {
 
 # Additional stuff for the LaTeX preamble.
 #'preamble': '',
-}
+#}
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.

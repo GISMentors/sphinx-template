@@ -70,7 +70,7 @@ class Youtube(IframeVideo):
     width="%(width)u" height="%(height)u" frameborder="0" \
     webkitAllowFullScreen mozallowfullscreen allowfullscreen \
     class="align-%(align)s"></iframe><div style="margin-top: 5px; margin-bottom: 5px"><i>%(caption)s</i></div></div>'
-    latex = '\\paragraph{YouTube: %(caption)s} \\url{http://www.youtube.com/embed/%(video_id)s}'
+    latex = '\\vskip 0.5em \\textbf{YouTube -- %(caption)s} \\newline \\url{http://www.youtube.com/embed/%(video_id)s}\\vskip 0.5em'
 
 class Vimeo(IframeVideo):
     html = '<iframe src="http://player.vimeo.com/video/%(video_id)s" \
