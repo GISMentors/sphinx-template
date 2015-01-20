@@ -33,6 +33,8 @@ class Autoimage(Figure):
                    'scale': directives.percentage,
                    'class': directives.class_option,
                    'align': align,
+                   'height': directives.length_or_unitless,
+                   'width': directives.length_or_percentage_or_unitless,
                    }
 
     def run(self):
@@ -66,8 +68,16 @@ class Autoimage(Figure):
                 self.options['scale'] = 100
             else:
                 self.options['scale'] = 55
-                
-            self.options['align'] = self.options.get('align', 'center')
+        else:
+            width = self.options.get('width', None)
+            if width:
+                self.options['width'] = width
+            height = self.options.get('height', None)
+            if height:
+                self.options['height'] = height
+            
+        self.options['align'] = self.options.get('align', 'center')
+        
         return super(Autoimage, self).run()
 
 
