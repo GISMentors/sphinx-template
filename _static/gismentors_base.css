@@ -229,7 +229,12 @@ div.document div.highlight {
 }
 
 div.document h2 {
-  font-size: 110%; /*** new ***/
+  font-size: 130%; /*** new ***/
+  margin-top: .7em;
+}
+
+div.document h3 {
+  font-size: 120%; /*** new ***/
   margin-top: .7em;
 }
 
