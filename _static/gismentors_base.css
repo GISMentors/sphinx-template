@@ -517,6 +517,16 @@ span.map {
   font-family: "Brush Script MT", cursive;
 }
 
+span.dbtable {
+  font-family: "Brush Script MT", cursive;
+}
+
+span.sqlcmd {
+    font-family: monospace;
+    color: #007020;
+    font-weight: bold;
+}
+
 span.item {
   font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;
   background-color: #dddddd;

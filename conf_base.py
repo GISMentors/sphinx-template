@@ -250,4 +250,10 @@ rst_prolog = """
 
 .. role:: item
     :class: item
+
+.. role:: dbtable
+   :class: dbtable
+
+.. role:: sqlcmd
+   :class: sqlcmd
 """
