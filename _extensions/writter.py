@@ -27,3 +27,6 @@ class CustomHTMLTranslator(BaseTranslator):
         return text
 
 sphinx.writers.html.SmartyPantsHTMLTranslator = CustomHTMLTranslator
+
+def setup(app):
+    return {'version': '0.1'}
