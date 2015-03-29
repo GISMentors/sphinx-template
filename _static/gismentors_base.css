@@ -521,6 +521,10 @@ span.dbtable {
   font-family: "Brush Script MT", cursive;
 }
 
+span.dbcolumn {
+  font-family: "Brush Script MT", cursive;
+}
+
 span.sqlcmd {
     font-family: monospace;
     color: #007020;
