@@ -1,4 +1,7 @@
+import re
+
 import sphinx.writers.latex
+
 BaseTranslator = sphinx.writers.latex.LaTeXTranslator
 
 class DocTranslator(BaseTranslator):
@@ -23,7 +26,7 @@ class CustomHTMLTranslator(BaseTranslator):
 
     def bulk_text_processor(self, text):
         if '~' in text:
-            text = text.replace('~', '&nbsp;')
+            return re.sub(r'\b~\b', '&nbsp;', text)
         return text
 
 sphinx.writers.html.SmartyPantsHTMLTranslator = CustomHTMLTranslator
