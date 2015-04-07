@@ -19,7 +19,7 @@ def find_image(path, filename):
         elif os.path.exists(fname):
             return filename
     
-    return False
+    raise Exception('{} not found'.format(filename))
 
 def align(argument):
     """Conversion function for the "align" option."""
