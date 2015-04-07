@@ -35,7 +35,9 @@ extlinks = {'grasscmd': ('http://grass.osgeo.org/grass70/manuals/%s.html', ''),
             'wikipedia': ('http://cs.wikipedia.org/wiki/%s', ''),
             'wikipedia-en': ('http://en.wikipedia.org/wiki/%s', ''),
             'epsg' : ('http://epsg.io/%s', 'EPSG:'),
-            'pgiscmd': ('http://postgis.net/docs/%s.html', '') }
+            'pgiscmd': ('http://postgis.net/docs/%s.html', '') 
+            'pgsqlcmd': ('http://www.postgresql.org/docs/9.4/static/%s.html', '')
+            }
 
 # Add any paths that contain templates here, relative to this directory.
 #templates_path = ['../sphinx-template/_templates']
