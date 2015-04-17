@@ -32,3 +32,11 @@ Example for Bash and GRASS-GIS repository
 8. Goto to `<repo>` and build
 
         cd ${repo} && make html
+
+Directives
+----------
+* youtube
+* vimeo
+* notegrass6
+* notecmd
+* noteadvanced
