@@ -263,4 +263,7 @@ rst_prolog = """
 
 .. role:: sqlcmd
    :class: sqlcmd
+
+.. role:: red
+   :class: red
 """

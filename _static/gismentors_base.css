@@ -615,3 +615,7 @@ table.border { margin-top: 5px; margin-bottom: 5px; }
 ul.simple {
     margin-bottom: 5px;
 }
+
+.red {
+    color:red;
+}
