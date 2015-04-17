@@ -36,7 +36,8 @@ extlinks = {'grasscmd': ('http://grass.osgeo.org/grass70/manuals/%s.html', ''),
             'wikipedia-en': ('http://en.wikipedia.org/wiki/%s', ''),
             'epsg' : ('http://epsg.io/%s', 'EPSG:'),
             'pgiscmd': ('http://postgis.net/docs/%s.html', ''),
-            'pgsqlcmd': ('http://www.postgresql.org/docs/current/static/%s.html', '')
+            'pgsqlcmd': ('http://www.postgresql.org/docs/current/static/%s.html', ''),
+            'skoleni' : ('http://training.gismentors.eu/%s', '')
             }
 
 # Add any paths that contain templates here, relative to this directory.
