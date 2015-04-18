@@ -517,6 +517,10 @@ span.map {
   font-family: "Brush Script MT", cursive;
 }
 
+span.mapset {
+  font-style: italic;
+}
+
 span.dbtable {
   font-family: monospace;
   color: rgb(50, 50, 50);
@@ -618,4 +622,10 @@ ul.simple {
 
 .red {
     color:red;
+}
+
+span.lcode {
+    font-family: monospace;
+    color: #007020;
+    font-weight: bold;
 }

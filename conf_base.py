@@ -37,7 +37,10 @@ extlinks = {'grasscmd': ('http://grass.osgeo.org/grass70/manuals/%s.html', ''),
             'epsg' : ('http://epsg.io/%s', 'EPSG:'),
             'pgiscmd': ('http://postgis.net/docs/%s.html', ''),
             'pgsqlcmd': ('http://www.postgresql.org/docs/current/static/%s.html', ''),
-            'skoleni' : ('http://training.gismentors.eu/%s', '')
+            'skoleni' : ('http://training.gismentors.eu/%s', ''),
+            'pygrass-gis' : ('http://grass.osgeo.org/grass70/manuals/libpython/pygrass.gis.html#pygrass.gis.%s', ''),
+            'pygrass-modules' : ('http://grass.osgeo.org/grass70/manuals/libpython/pygrass.modules.interface.html#pygrass.modules.interface.module.%s', '')
+
             }
 
 # Add any paths that contain templates here, relative to this directory.
@@ -244,6 +247,9 @@ rst_prolog = """
 .. role:: map
    :class: map
 
+.. role:: mapset
+   :class: mapset
+
 .. role:: notecmd
    :class: admonition.cmd
 
@@ -266,4 +272,7 @@ rst_prolog = """
 
 .. role:: red
    :class: red
+
+.. role:: lcode
+   :class: lcode
 """
