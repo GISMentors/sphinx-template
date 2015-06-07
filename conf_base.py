@@ -32,6 +32,8 @@ sys.path.append(os.path.abspath(os.path.join('..', 'sphinx-template', '_extensio
 extensions = [ 'sphinx.ext.extlinks', 'sphinx.ext.todo', 'sphinx.ext.mathjax',
                'video', 'notes', 'autoimage', 'writter' ]
 extlinks = {'grasscmd': ('http://grass.osgeo.org/grass70/manuals/%s.html', ''),
+            'grasscmd2': ('http://grass.osgeo.org/grass70/manuals/%s', ''),
+            'grasscmdaddons': ('http://grass.osgeo.org/grass70/manuals/addons/%s', ''),
             'wikipedia': ('http://cs.wikipedia.org/wiki/%s', ''),
             'wikipedia-en': ('http://en.wikipedia.org/wiki/%s', ''),
             'epsg' : ('http://epsg.io/%s', 'EPSG:'),
