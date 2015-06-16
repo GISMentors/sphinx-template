@@ -15,6 +15,8 @@
 import sys
 import os
 
+from utils import get_month_year
+
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -182,20 +184,22 @@ html_show_sourcelink = False
 
 # -- Options for LaTeX output ---------------------------------------------
 
-#latex_elements = {
+latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
-#'papersize': 'letterpaper',
+#    'papersize': 'letterpaper',
 
 # The font size ('10pt', '11pt' or '12pt').
-#'pointsize': '10pt',
+    'pointsize': '11pt',
 
 # Additional stuff for the LaTeX preamble.
-#'preamble': '',
-#}
+    'preamble': "".join([]),
+    'releasename': u'verze',
+    'date': '%s %s' % get_month_year(),
+}
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-#latex_logo = None
+latex_logo = "images/opengeolabs-logo.png"
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
