@@ -32,7 +32,7 @@ from utils import get_month_year
 # ones.
 sys.path.append(os.path.abspath(os.path.join('..', 'sphinx-template', '_extensions')))
 extensions = [ 'sphinx.ext.extlinks', 'sphinx.ext.todo', 'sphinx.ext.mathjax',
-               'video', 'notes', 'autoimage', 'writter' ]
+               'video', 'notes', 'autoimage', 'writter', 'numfig' ]
 extlinks = {'grasscmd': ('http://grass.osgeo.org/grass70/manuals/%s.html', ''),
             'grasscmd2': ('http://grass.osgeo.org/grass70/manuals/%s', ''),
             'grasscmdaddons': ('http://grass.osgeo.org/grass70/manuals/addons/%s', ''),
