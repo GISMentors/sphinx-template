@@ -12,26 +12,27 @@ Example for Bash and GRASS-GIS repository
 
 2. Copy selected files from `_static` directory
 
+   	mkdir ${repo}/_static
         cp sphinx-template/_static/bgtop.png \
          sphinx-template/_static/bgfooter.png \
          sphinx-template/_static/gismentors.css \
          ${repo}/_static
 
-3. Copy `conf.py`
+3. Copy `conf.py` and `Makefile`
 
-        cp sphinx-template/conf.py ${repo}
+        cp sphinx-template/conf.py sphinx-template/Makefile ${repo}
+	
+4. Optionaly modify background images (`bgtop.png` and `bgfooter.png`) in `<repo>`
 
-4. Modify background images (`bgtop.png` and `bgfooter.png`) in `<repo>`
-
-5. Modify `gismentors.css` in `<repo>`
+5. Optionaly modify `gismentors.css` in `<repo>`
 
 6. Modify `conf.py` in `<repo>`
 
-7. Modify `Make` and `make.bat` in `<repo>`, adjust `PROJECT_NAME` variable
+8. Goto to `<repo>`, add index.rst and build
 
-8. Goto to `<repo>` and build
-
-        cd ${repo} && make html
+        cd ${repo}
+	echo "Test" > index.rst
+	make html
 
 Directives
 ----------
