@@ -36,7 +36,7 @@ function update_pdf {
 
 # update sphinx template
 cd ~/sphinx-template/
-git pull --rebase
+git pull # --rebase
 
 # update all workshops
 for dir in ${!workshops[*]}
