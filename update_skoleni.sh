@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 echo "buildim" `date` >> /tmp/build.log
 workshops=("vugtk" "geopython" "grass-gis-zacatecnik" "postgis-zacatecnik" "postgis-pokrocily"
            "otevrena-geodata" "open-source-gis" "grass-gis-pokrocily" "qgis-zacatecnik")
