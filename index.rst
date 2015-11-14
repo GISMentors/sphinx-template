@@ -23,7 +23,7 @@ Poznámky
 
 .. noteadvanced:: Text
 
-.. notecmd:: výpočtu
+.. notecmd:: Příklad použití
 
    Text
 
@@ -35,12 +35,14 @@ Poznámky
 
 .. todo:: Text
 
+.. notedata:: Text
+                        
 Video
 =====
 
 .. youtube:: teA-x-vmXYc
 
-             Prostorový dotaz - výběr komunikací, které kříží železnice
+   Prostorový dotaz - výběr komunikací, které kříží železnice
           
 Tabulky
 =======
@@ -85,6 +87,10 @@ NoBorder
 Obrázky
 =======
 
+Odkazy: :num:`#obr-1`
+
+.. _obr-1:
+
 .. figure:: images/logo.png
 
    Logo OpenGeoLabs / gismentors
@@ -104,7 +110,7 @@ Middle
    :class: middle
                     
    Logo OpenGeoLabs / gismentors (MIDDLE)
-   
+
 Large
 ^^^^^
 
