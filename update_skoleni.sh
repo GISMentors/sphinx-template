@@ -17,7 +17,9 @@ function update_git {
 
 function update_html {
 	cd ~
-	echo updating $1
+        echo '-----------------------------------------------------------'
+	echo generating HTML for $1
+        echo '-----------------------------------------------------------'
 	cd $1
 	make clean
         make html
@@ -25,7 +27,9 @@ function update_html {
 
 function update_pdf {
     cd ~
-    echo generating pdf for $1
+    echo '-----------------------------------------------------------'
+    echo generating PDF for $1
+    echo '-----------------------------------------------------------'
     cd $1
     make latexpdf
     cp _build/latex/*.pdf html
