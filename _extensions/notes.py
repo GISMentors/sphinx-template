@@ -3,6 +3,7 @@
 from docutils import nodes
 from docutils.parsers.rst.directives.admonitions import BaseAdmonition
 from docutils.parsers.rst import directives
+from docutils.statemachine import ViewList
 
 class NoteCmd(directives.admonitions.BaseAdmonition):
     required_arguments = 1
@@ -31,7 +32,20 @@ class NoteAdvanced(directives.admonitions.BaseAdmonition):
         self.arguments.append(u'Poznámka pro pokročilé')
         return super(NoteAdvanced, self).run()
 
+class NoteDataset(directives.admonitions.BaseAdmonition):
+    required_arguments = 0
+    node_class = nodes.admonition
+    has_content = True
+    
+    def run(self):
+        self.options['classes'] = ['note']
+        self.arguments.append(u'Poznámka k datové sadě GISMentors')
+        self.content.append(ViewList([u'Pro účely školení byla vytvořena datová sada složená z dat pocházejících z otevřených či veřejných zdrojů jako je `EU-DEM <http://www.eea.europa.eu/data-and-maps/data/eu-dem>`_, `RÚIAN <http://www.cuzk.cz/ruian/RUIAN.aspx>`_, `OpenStreetMap <http://wiki.openstreetmap.org/wiki/Main_Page>`_, `Dibavod <http://www.dibavod.cz/>`_ a `IPR <http://www.geoportalpraha.cz/cs/opendata>`_.']))
+        
+        return super(NoteDataset, self).run()
+
 def setup(builder):
     directives.register_directive('notecmd', NoteCmd)
     directives.register_directive('notegrass6', NoteGRASS6)
     directives.register_directive('noteadvanced', NoteAdvanced)
+    directives.register_directive('notedata', NoteDataset)

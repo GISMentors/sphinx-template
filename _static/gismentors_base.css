@@ -629,3 +629,11 @@ span.lcode {
     color: #007020;
     font-weight: bold;
 }
+
+div.document ol {
+    margin-top: -0.3em;
+}
+
+span.menuselection {
+    font-style: italic;
+}
