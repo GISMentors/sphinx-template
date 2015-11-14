@@ -10,7 +10,7 @@ function update_git {
 	cd ~
 	echo updating $1
 	cd $1
-	git pull --rebase
+	git pull # --rebase
 	make clean
 };
 
