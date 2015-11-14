@@ -27,7 +27,6 @@ function update_pdf {
     cd ~
     echo generating pdf for $1
     cd $1
-    make clean
     make latexpdf
     cp _build/latex/*.pdf html
     cd html
