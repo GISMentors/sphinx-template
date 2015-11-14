@@ -510,7 +510,12 @@ img.large {
 
 img.small {
   border: 0;
-  width:300px;
+  width:350px;
+}
+
+img.tiny {
+  border: 0;
+  width:250px;
 }
 
 span.map {

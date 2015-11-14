@@ -95,6 +95,14 @@ Odkazy: :num:`#obr-1`
 
    Logo OpenGeoLabs / gismentors
 
+Tiny
+^^^^
+
+.. figure:: images/logo.png
+   :class: tiny
+                    
+   Logo OpenGeoLabs / gismentors (TINY)
+
 Small
 ^^^^^
 
