@@ -41,7 +41,8 @@ do
     update_git $workshop
     if [ $workshop == "grass-gis-zacatecnik" -o \
 	$workshop == "otevrena-geodata" -o \
-	$workshop == "postgis-zacatecnik" ] ; then
+	$workshop == "postgis-zacatecnik" -o \
+        $workshop == "qgis-zacatecnik" ] ; then
         update_html $workshop full
 	update_pdf $workshop
     else
