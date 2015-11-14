@@ -8,7 +8,9 @@ workshops=("vugtk" "geopython" "grass-gis-zacatecnik" "postgis-zacatecnik" "post
 
 function update_git {
 	cd ~
+        echo '-----------------------------------------------------------'
 	echo updating $1
+        echo '-----------------------------------------------------------'
 	cd $1
 	git pull # --rebase
 	make clean
