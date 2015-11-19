@@ -109,7 +109,7 @@ img {
   border: 0;
   margin-top: 5px;     /*** new ***/
   margin-bottom: 5px;  /*** new ***/
-  width: 480px;        /*** new ***/
+  width: 500px;        /*** new ***/
 }
 
 div.admonition {
@@ -500,7 +500,7 @@ div.figure {
 
 img.middle {
   border: 0;
-  width:600px;
+  width:650px;
 }
 
 img.large {
