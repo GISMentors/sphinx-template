@@ -283,4 +283,7 @@ rst_prolog = """
 
 .. role:: lcode
    :class: lcode
-"""
+
+.. |mIconPostgis| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconPostgis.png
+   :width: 16px
+""".format(path=os.path.dirname(os.path.abspath(__file__)), sep=os.path.sep)
