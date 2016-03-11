@@ -41,3 +41,13 @@ Directives
 * notegrass6
 * notecmd
 * noteadvanced
+
+Notes
+-----
+
+QGIS Icons:
+
+     cd ~/src/QGIS/images/themes/default
+     for f in *.svg; do
+          inkscape --export-png=$HOME/git/gismentors/sphinx-template/_static/icons/qgis/${f%%.svg}.png $f ;
+     done

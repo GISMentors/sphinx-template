@@ -285,5 +285,11 @@ rst_prolog = """
    :class: lcode
 
 .. |mIconPostgis| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconPostgis.png
-   :width: 16px
+   :width: 24px
+.. |mActionAddPostgisLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddPostgisLayer.png
+   :width: 24px
+.. |mIconEditable| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconEditable.png
+   :width: 24px
+.. |mActionCapturePolygon| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionCapturePolygon.png
+   :width: 24px
 """.format(path=os.path.dirname(os.path.abspath(__file__)), sep=os.path.sep)
