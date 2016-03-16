@@ -8,7 +8,19 @@ from docutils.parsers.rst.directives.images import Figure
 
 
 def find_image(path, filename):
-    dirs = [os.path.join(path,o) for o in os.listdir(path) if os.path.isdir(os.path.join(path,o))]
+    def scan_dir(path, dirs):
+        for o in os.listdir(path):
+            if not os.path.isdir(os.path.join(path,o)):
+                continue
+            if o in ('_build', '.git'):
+                continue
+            dirpath = os.path.join(path,o)
+            dirs.append(dirpath)
+            scan_dir(dirpath, dirs)
+
+    dirs = []
+    scan_dir(path, dirs)
+
     dirs.insert(0, '.')
     for path in dirs:
         fname = os.path.join(path, filename)
