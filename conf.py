@@ -3,11 +3,14 @@
 import sys
 import os
 
+sys.path.append(os.path.join('..', 'sphinx-template'))
+from utils import get_month_year, get_year
+
 # -- General configuration ------------------------------------------------
 
 # General information about the project.
 project = u'Školení GISMentors'
-copyright = u'2014 GISMentors.eu'
+copyright = u'2014-%d GISMentors.eu' % get_year()
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -21,7 +24,7 @@ release = '%s alpha' % version
 # -- Options for HTML output ----------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Skoleni-GISMentors'
+htmlhelp_basename = 'skoleni-GISMentors'
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -29,12 +32,19 @@ html_title = project
 
 # -- Options for LaTeX output ---------------------------------------------
 
+latex_elements = {
+# Additional stuff for the LaTeX preamble.
+    'preamble': "".join([]),
+    'releasename': u'verze',
+    'date': '%s %s' % get_month_year(),
+}
+
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    ('index', '%s.tex' % htmlhelp_basename, project,
-     copyright, 'manual'),
+    ('index', '%s-%s.tex' % (htmlhelp_basename, version), project,
+     u'GISMentors', u'manual'),
     ]
 
 # -- Options for manual page output ---------------------------------------
@@ -57,5 +67,9 @@ texinfo_documents = [
      'Miscellaneous'),
     ]
 
-sys.path.append(os.path.join('..', 'sphinx-template'))
+html_favicon = "images/favicon.ico"
+
 from conf_base import *
+
+todo_include_todos = True
+html_use_index = True
