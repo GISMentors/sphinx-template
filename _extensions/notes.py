@@ -11,7 +11,7 @@ class NoteCmd(directives.admonitions.BaseAdmonition):
 
     def run(self):
         self.options['classes'] = ['notecmd']
-        self.arguments[0] = self.arguments[0] + u' z příkazové řádky'
+        self.arguments[0] = self.arguments[0] + u' from command line'
         return super(NoteCmd, self).run()
 
 class NoteGRASS6(directives.admonitions.BaseAdmonition):
@@ -29,7 +29,7 @@ class NoteAdvanced(directives.admonitions.BaseAdmonition):
 
     def run(self):
         self.options['classes'] = ['noteadvanced']
-        self.arguments.append(u'Poznámka pro pokročilé')
+        self.arguments.append(u'Note for advanced users')
         return super(NoteAdvanced, self).run()
 
 class NoteDataset(directives.admonitions.BaseAdmonition):
