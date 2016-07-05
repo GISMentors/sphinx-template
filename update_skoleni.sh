@@ -5,7 +5,7 @@ set -e
 echo "buildim" `date` >> /tmp/build.log
 workshops=("vugtk" "grass-gis-zacatecnik" "postgis-zacatecnik" "postgis-pokrocily"
            "otevrena-geodata" "open-source-gis" "grass-gis-pokrocily" "qgis-zacatecnik" "qgis-pokrocily"
-           "geopython-zacatecnik" "geopython-pokrocily")
+           "geopython-zacatecnik" "geopython-pokrocily" "isprs-summer-school-2016")
 
 function update_git {
 	cd ~
@@ -48,11 +48,17 @@ for dir in ${!workshops[*]}
 do
     workshop=${workshops[$dir]}
     update_git $workshop
+    if [ $workshop == "isprs-summer-school-2016" ] ; then
+	(cd ~/sphinx-template ; git checkout en)
+    fi
     update_html $workshop
     if [ $workshop == "grass-gis-zacatecnik" -o \
 	$workshop == "otevrena-geodata" -o \
 	$workshop == "postgis-zacatecnik" -o \
         $workshop == "qgis-zacatecnik" ] ; then
 	update_pdf $workshop
+    fi
+    if [ $workshop == "isprs-summer-school-2016" ] ; then
+	(cd ~/sphinx-template ; git checkout master)
     fi
 done
