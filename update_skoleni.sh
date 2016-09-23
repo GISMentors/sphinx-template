@@ -3,7 +3,7 @@
 set -e
 
 echo "buildim" `date` >> /tmp/build.log
-workshops=("vugtk" "grass-gis-zacatecnik" "postgis-zacatecnik" "postgis-pokrocily"
+workshops=("grass-gis-zacatecnik" "postgis-zacatecnik" "postgis-pokrocily"
            "otevrena-geodata" "open-source-gis" "grass-gis-pokrocily" "qgis-zacatecnik" "qgis-pokrocily"
            "geopython-zacatecnik" "geopython-pokrocily" "isprs-summer-school-2016")
 
