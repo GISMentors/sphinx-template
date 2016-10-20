@@ -2,13 +2,16 @@
 
 set -e
 
+SCRIPT=`realpath $0`
+SCRIPT_PATH=`dirname $SCRIPT`
+
 echo "buildim" `date` >> /tmp/build.log
 workshops=("grass-gis-zacatecnik" "postgis-zacatecnik" "postgis-pokrocily"
            "otevrena-geodata" "open-source-gis" "grass-gis-pokrocily" "qgis-zacatecnik" "qgis-pokrocily"
            "geopython-zacatecnik" "geopython-pokrocily" "isprs-summer-school-2016")
 
 function update_git {
-	cd ~
+	cd ${SCRIPT_PATH}/..
         echo '-----------------------------------------------------------'
 	echo updating $1
         echo '-----------------------------------------------------------'
@@ -17,7 +20,7 @@ function update_git {
 };
 
 function update_html {
-	cd ~
+	cd ${SCRIPT_PATH}/..
         echo '-----------------------------------------------------------'
 	echo generating HTML for $1
         echo '-----------------------------------------------------------'
@@ -27,7 +30,7 @@ function update_html {
 }
 
 function update_pdf {
-    cd ~
+    cd ${SCRIPT_PATH}/..
     echo '-----------------------------------------------------------'
     echo generating PDF for $1
     echo '-----------------------------------------------------------'
@@ -40,7 +43,7 @@ function update_pdf {
 }
 
 # update sphinx template
-cd ~/sphinx-template/
+cd ${SCRIPT_PATH}
 git pull # --rebase
 
 # update all workshops
@@ -49,7 +52,7 @@ do
     workshop=${workshops[$dir]}
     update_git $workshop
     if [ $workshop == "isprs-summer-school-2016" ] ; then
-	(cd ~/sphinx-template ; git checkout en)
+	(cd ${SCRIPT_PATH}; git checkout en)
     fi
     update_html $workshop
     if [ $workshop == "grass-gis-zacatecnik" -o \
@@ -59,6 +62,6 @@ do
 	update_pdf $workshop
     fi
     if [ $workshop == "isprs-summer-school-2016" ] ; then
-	(cd ~/sphinx-template ; git checkout master)
+	(cd ${SCRIPT_PATH}; git checkout master)
     fi
 done
