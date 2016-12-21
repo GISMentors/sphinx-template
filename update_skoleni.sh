@@ -8,7 +8,7 @@ SCRIPT_PATH=`dirname $SCRIPT`
 echo "buildim" `date` >> /tmp/build.log
 workshops=("grass-gis-zacatecnik" "postgis-zacatecnik" "postgis-pokrocily"
            "otevrena-geodata" "open-source-gis" "grass-gis-pokrocily" "qgis-zacatecnik" "qgis-pokrocily"
-           "geopython-zacatecnik" "geopython-pokrocily" "isprs-summer-school-2016")
+           "geopython-zacatecnik" "geopython-pokrocily" "isprs-summer-school-2016" "geoserver-zacatecnik")
 
 function update_git {
 	cd ${SCRIPT_PATH}/..
