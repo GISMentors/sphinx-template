@@ -36,8 +36,8 @@ function update_pdf {
     echo '-----------------------------------------------------------'
     cd $1
     make latexpdf
-    cp _build/latex/*.pdf html
-    cd html
+    cp _build/latex/*.pdf _build/html
+    cd _build/html
     pdf=`basename *.pdf | sed 's/-[0-9].*/.pdf/g'`
     ln -sf `basename *.pdf` $pdf
 }
