@@ -44,7 +44,7 @@ function update_pdf {
 }
 
 # activate build environment
-source ${SCRIPT_PATH}/../build-env/bin/activate
+source ${SCRIPT_PATH}/../../build-env/bin/activate
 
 # update sphinx template
 cd ${SCRIPT_PATH}
