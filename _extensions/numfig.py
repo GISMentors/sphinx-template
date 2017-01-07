@@ -75,7 +75,10 @@ def doctree_resolved(app, doctree, docname):
                 continue
 
             if app.builder.name == 'html':
-                target_doc = app.builder.env.figid_docname_map[target]
+                try:
+                    target_doc = app.builder.env.figid_docname_map[target]
+                except KeyError as e:
+                    raise Exception(e)
                 link = "%s#%s" % (app.builder.get_relative_uri(docname, target_doc),
                                   target)
                 html = '<a class="pageref" href="%s">obr. %s</a>' % (link, labelfmt %(figids[target]))
