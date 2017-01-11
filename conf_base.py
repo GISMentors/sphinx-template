@@ -33,9 +33,9 @@ from utils import get_month_year
 sys.path.append(os.path.abspath(os.path.join('..', 'sphinx-template', '_extensions')))
 extensions = [ 'sphinx.ext.extlinks', 'sphinx.ext.todo', 'sphinx.ext.mathjax',
                'video', 'notes', 'autoimage', 'writter', 'numfig' ]
-extlinks = {'grasscmd': ('http://grass.osgeo.org/grass70/manuals/%s.html', ''),
-            'grasscmd2': ('http://grass.osgeo.org/grass70/manuals/%s', ''),
-            'grasscmdaddons': ('http://grass.osgeo.org/grass70/manuals/addons/%s', ''),
+extlinks = {'grasscmd': ('http://grass.osgeo.org/grass72/manuals/%s.html', ''),
+            'grasscmd2': ('http://grass.osgeo.org/grass72/manuals/%s', ''),
+            'grasscmdaddons': ('http://grass.osgeo.org/grass72/manuals/addons/%s.html', ''),
             'wikipedia': ('http://cs.wikipedia.org/wiki/%s', ''),
             'wikipedia-en': ('http://en.wikipedia.org/wiki/%s', ''),
             'epsg' : ('http://epsg.io/%s', 'EPSG:'),
@@ -43,10 +43,10 @@ extlinks = {'grasscmd': ('http://grass.osgeo.org/grass70/manuals/%s.html', ''),
             'pgiscmd2': ('http://postgis.net/docs/%s', ''),
             'pgsqlcmd': ('http://www.postgresql.org/docs/current/static/%s.html', ''),
             'skoleni' : ('http://training.gismentors.eu/%s', ''),
-            'pygrass-gis' : ('http://grass.osgeo.org/grass70/manuals/libpython/pygrass.gis.html#pygrass.gis.%s', ''),
-            'pygrass-modules' : ('http://grass.osgeo.org/grass70/manuals/libpython/pygrass.modules.interface.html#pygrass.modules.interface.module.%s', ''),
-            'pygrass-vector' : ('http://grass.osgeo.org/grass70/manuals/libpython/pygrass.vector.html#pygrass.vector.%s', ''),
-            'pygrass-raster' : ('http://grass.osgeo.org/grass70/manuals/libpython/pygrass.raster.html#pygrass.raster.%s', ''),
+            'pygrass-gis' : ('http://grass.osgeo.org/grass72/manuals/libpython/pygrass.gis.html#pygrass.gis.%s', ''),
+            'pygrass-modules' : ('http://grass.osgeo.org/grass72/manuals/libpython/pygrass.modules.interface.html#pygrass.modules.interface.module.%s', ''),
+            'pygrass-vector' : ('http://grass.osgeo.org/grass72/manuals/libpython/pygrass.vector.html#pygrass.vector.%s', ''),
+            'pygrass-raster' : ('http://grass.osgeo.org/grass72/manuals/libpython/pygrass.raster.html#pygrass.raster.%s', ''),
             }
 
 # Add any paths that contain templates here, relative to this directory.
