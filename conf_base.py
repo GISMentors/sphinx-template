@@ -293,3 +293,11 @@ rst_prolog = """
 .. |mActionCapturePolygon| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionCapturePolygon.png
    :width: 24px
 """.format(path=os.path.dirname(os.path.abspath(__file__)), sep=os.path.sep)
+
+### GRASS icons
+rst_prolog += """
+.. |grass-zoom-extent| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}zoom-extent.png
+   :width: {width}
+.. |grass-settings| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}settings.png
+   :width: {width}
+""".format(path=os.path.dirname(os.path.abspath(__file__)), sep=os.path.sep, width='1em')
