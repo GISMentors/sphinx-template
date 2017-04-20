@@ -300,4 +300,18 @@ rst_prolog += """
    :width: {width}
 .. |grass-settings| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}settings.png
    :width: {width}
-""".format(path=os.path.dirname(os.path.abspath(__file__)), sep=os.path.sep, width='1em')
+.. |grass-layer-raster-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-raster-add.png
+   :width: {width}
+.. |grass-layer-raster-more| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-raster-more.png
+   :width: {width}
+.. |grass-layer-vector-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-vector-add.png
+   :width: {width}
+.. |grass-layer-vector-more| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-vector-more.png
+   :width: {width}
+.. |grass-zoom-more| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}zoom-more.png
+   :width: {width}
+.. |grass-info| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}info.png
+   :width: {width}
+.. |grass-table| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}table.png
+   :width: {width}
+""".format(path=os.path.dirname(os.path.abspath(__file__)), sep=os.path.sep, width='1.5em')
