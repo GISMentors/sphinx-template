@@ -47,6 +47,7 @@ class Autoimage(Figure):
                    'align': align,
                    'height': directives.length_or_unitless,
                    'width': directives.length_or_percentage_or_unitless,
+                   'width-latex': directives.length_or_percentage_or_unitless,
                    }
 
     def run(self):
@@ -80,6 +81,9 @@ class Autoimage(Figure):
                 self.options['scale'] = 100
             else:
                 self.options['scale'] = 55
+            width = self.options.get('width-' + builder_name, -1)
+            if width > 0:
+                self.options['width'] = width
         else:
             width = self.options.get('width', None)
             if width:
