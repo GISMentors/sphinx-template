@@ -315,5 +315,16 @@ rst_prolog += """
 .. |grass-table| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}table.png
    :width: {width}
 .. |grass-raster-calculator| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}raster-calculator.png
+.. |grass-edit| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}edit.png
+   :width: {width}
+.. |grass-point-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}point-create.png
+   :width: {width}
+.. |grass-line-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}line-create.png
+   :width: {width}
+.. |grass-polygon-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}polygon-create.png
+   :width: {width}
+.. |grass-line-delete| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}line-delete.png
+   :width: {width}
+.. |grass-polygon-delete| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}polygon-delete.png
    :width: {width}
 """.format(path=os.path.dirname(os.path.abspath(__file__)), sep=os.path.sep, width='1.5em')
