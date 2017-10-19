@@ -14,7 +14,7 @@
 
 import sys
 import os
-
+from sphinx import version_info
 from utils import get_month_year
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -32,7 +32,12 @@ from utils import get_month_year
 # ones.
 sys.path.append(os.path.abspath(os.path.join('..', 'sphinx-template', '_extensions')))
 extensions = [ 'sphinx.ext.extlinks', 'sphinx.ext.todo', 'sphinx.ext.mathjax',
-               'video', 'notes', 'autoimage', 'writter', 'numfig' ]
+               'video', 'notes', 'autoimage', 'writter']
+if version_info[0] <= 1 and version_info[1] < 6:
+    extensions.append('numfig')
+else:
+    numfig = True
+
 extlinks = {'grasscmd': ('http://grass.osgeo.org/grass72/manuals/%s.html', ''),
             'grasscmd2': ('http://grass.osgeo.org/grass72/manuals/%s', ''),
             'grasscmdaddons': ('http://grass.osgeo.org/grass72/manuals/addons/%s.html', ''),
