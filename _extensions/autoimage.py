@@ -74,7 +74,7 @@ class Autoimage(Figure):
             scale = self.options.get('scale-' + builder_name, -1)
             if scale < 0:
                 if classname == 'small':
-                    scale = 50
+                    scale = 35
                 elif classname == 'middle':
                     scale = 80
                 elif classname == 'large':
