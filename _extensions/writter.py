@@ -19,8 +19,10 @@ class DocTranslator(BaseTranslator):
 
 sphinx.writers.latex.LaTeXTranslator = DocTranslator
 
-import sphinx.writers.html
-BaseTranslator = sphinx.writers.html.SmartyPantsHTMLTranslator
+try:
+    from sphinx.writers.html import SmartyPantsHTMLTranslator as HTMLTranslator
+except ImportError:  # Sphinx 1.6+
+    from sphinx.writers.html import HTMLTranslator
 
 class CustomHTMLTranslator(BaseTranslator):
 
@@ -29,7 +31,7 @@ class CustomHTMLTranslator(BaseTranslator):
             return re.sub(r'\b~\b', '&nbsp;', text)
         return text
 
-sphinx.writers.html.SmartyPantsHTMLTranslator = CustomHTMLTranslator
+HTMLTranslator = CustomHTMLTranslator
 
 def setup(app):
     return {'version': '0.1'}

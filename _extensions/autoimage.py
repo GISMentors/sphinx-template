@@ -5,6 +5,7 @@ import os
 from docutils import nodes
 from docutils.parsers.rst import directives
 from docutils.parsers.rst.directives.images import Figure
+from sphinx import version_info
 
 
 def find_image(path, filename):
@@ -47,6 +48,7 @@ class Autoimage(Figure):
                    'align': align,
                    'height': directives.length_or_unitless,
                    'width': directives.length_or_percentage_or_unitless,
+                   'width-latex': directives.length_or_percentage_or_unitless,
                    }
 
     def run(self):
@@ -70,16 +72,25 @@ class Autoimage(Figure):
         if builder_name == 'latex':
             classname = self.options.get('class', [''])[0]
             scale = self.options.get('scale-' + builder_name, -1)
-            if scale > 0:
+            if scale < 0:
+                if classname == 'small':
+                    scale = 35
+                elif classname == 'middle':
+                    scale = 80
+                elif classname == 'large':
+                    scale = 100
+                else:
+                    scale = 53
+
+            # see https://github.com/sphinx-doc/sphinx/issues/3202
+            if version_info[0] <= 1 and version_info[1] < 5:
                 self.options['scale'] = scale
-            elif classname == 'small':
-                self.options['scale'] = 50
-            elif classname == 'middle':
-                self.options['scale'] = 80
-            elif classname == 'large':
-                self.options['scale'] = 100
             else:
-                self.options['scale'] = 55
+                self.options['width'] = '{}%'.format(scale)
+
+            width = self.options.get('width-' + builder_name, -1)
+            if width > 0:
+                self.options['width'] = width
         else:
             width = self.options.get('width', None)
             if width:

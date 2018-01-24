@@ -14,7 +14,7 @@
 
 import sys
 import os
-
+from sphinx import version_info
 from utils import get_month_year
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -32,7 +32,12 @@ from utils import get_month_year
 # ones.
 sys.path.append(os.path.abspath(os.path.join('..', 'sphinx-template', '_extensions')))
 extensions = [ 'sphinx.ext.extlinks', 'sphinx.ext.todo', 'sphinx.ext.mathjax',
-               'video', 'notes', 'autoimage', 'writter', 'numfig' ]
+               'video', 'notes', 'autoimage', 'writter']
+if version_info[0] <= 1 and version_info[1] < 6:
+    extensions.append('numfig')
+else:
+    numfig = True
+
 extlinks = {'grasscmd': ('http://grass.osgeo.org/grass72/manuals/%s.html', ''),
             'grasscmd2': ('http://grass.osgeo.org/grass72/manuals/%s', ''),
             'grasscmdaddons': ('http://grass.osgeo.org/grass72/manuals/addons/%s.html', ''),
@@ -293,3 +298,38 @@ rst_prolog = """
 .. |mActionCapturePolygon| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionCapturePolygon.png
    :width: 24px
 """.format(path=os.path.dirname(os.path.abspath(__file__)), sep=os.path.sep)
+
+### GRASS icons
+rst_prolog += """
+.. |grass-zoom-extent| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}zoom-extent.png
+   :width: {width}
+.. |grass-settings| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}settings.png
+   :width: {width}
+.. |grass-layer-raster-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-raster-add.png
+   :width: {width}
+.. |grass-layer-raster-more| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-raster-more.png
+   :width: {width}
+.. |grass-layer-vector-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-vector-add.png
+   :width: {width}
+.. |grass-layer-vector-more| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-vector-more.png
+   :width: {width}
+.. |grass-zoom-more| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}zoom-more.png
+   :width: {width}
+.. |grass-info| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}info.png
+   :width: {width}
+.. |grass-table| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}table.png
+   :width: {width}
+.. |grass-raster-calculator| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}raster-calculator.png
+.. |grass-edit| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}edit.png
+   :width: {width}
+.. |grass-point-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}point-create.png
+   :width: {width}
+.. |grass-line-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}line-create.png
+   :width: {width}
+.. |grass-polygon-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}polygon-create.png
+   :width: {width}
+.. |grass-line-delete| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}line-delete.png
+   :width: {width}
+.. |grass-polygon-delete| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}polygon-delete.png
+   :width: {width}
+""".format(path=os.path.dirname(os.path.abspath(__file__)), sep=os.path.sep, width='1.5em')
