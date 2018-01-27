@@ -38,9 +38,9 @@ if version_info[0] <= 1 and version_info[1] < 6:
 else:
     numfig = True
 
-extlinks = {'grasscmd': ('http://grass.osgeo.org/grass72/manuals/%s.html', ''),
-            'grasscmd2': ('http://grass.osgeo.org/grass72/manuals/%s', ''),
-            'grasscmdaddons': ('http://grass.osgeo.org/grass72/manuals/addons/%s.html', ''),
+extlinks = {'grasscmd': ('http://grass.osgeo.org/grass74/manuals/%s.html', ''),
+            'grasscmd2': ('http://grass.osgeo.org/grass74/manuals/%s', ''),
+            'grasscmdaddons': ('http://grass.osgeo.org/grass74/manuals/addons/%s.html', ''),
             'wikipedia': ('http://cs.wikipedia.org/wiki/%s', ''),
             'wikipedia-en': ('http://en.wikipedia.org/wiki/%s', ''),
             'epsg' : ('http://epsg.io/%s', 'EPSG:'),
@@ -48,10 +48,10 @@ extlinks = {'grasscmd': ('http://grass.osgeo.org/grass72/manuals/%s.html', ''),
             'pgiscmd2': ('http://postgis.net/docs/%s', ''),
             'pgsqlcmd': ('http://www.postgresql.org/docs/current/static/%s.html', ''),
             'skoleni' : ('http://training.gismentors.eu/%s', ''),
-            'pygrass-gis' : ('http://grass.osgeo.org/grass72/manuals/libpython/pygrass.gis.html#pygrass.gis.%s', ''),
-            'pygrass-modules' : ('http://grass.osgeo.org/grass72/manuals/libpython/pygrass.modules.interface.html#pygrass.modules.interface.module.%s', ''),
-            'pygrass-vector' : ('http://grass.osgeo.org/grass72/manuals/libpython/pygrass.vector.html#pygrass.vector.%s', ''),
-            'pygrass-raster' : ('http://grass.osgeo.org/grass72/manuals/libpython/pygrass.raster.html#pygrass.raster.%s', ''),
+            'pygrass-gis' : ('http://grass.osgeo.org/grass74/manuals/libpython/pygrass.gis.html#pygrass.gis.%s', ''),
+            'pygrass-modules' : ('http://grass.osgeo.org/grass74/manuals/libpython/pygrass.modules.interface.html#pygrass.modules.interface.module.%s', ''),
+            'pygrass-vector' : ('http://grass.osgeo.org/grass74/manuals/libpython/pygrass.vector.html#pygrass.vector.%s', ''),
+            'pygrass-raster' : ('http://grass.osgeo.org/grass74/manuals/libpython/pygrass.raster.html#pygrass.raster.%s', ''),
             }
 
 # Add any paths that contain templates here, relative to this directory.
@@ -312,6 +312,8 @@ rst_prolog += """
 .. |grass-layer-vector-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-vector-add.png
    :width: {width}
 .. |grass-layer-vector-more| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-vector-more.png
+   :width: {width}
+.. |grass-layer-wms-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-wms-add.png
    :width: {width}
 .. |grass-zoom-more| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}zoom-more.png
    :width: {width}
