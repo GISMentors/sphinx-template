@@ -334,4 +334,8 @@ rst_prolog += """
    :width: {width}
 .. |grass-polygon-delete| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}polygon-delete.png
    :width: {width}
+.. |grass-raster-calculator| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}raster-calculator.png
+   :width: {width}
+.. |grass-overlay-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}overlay-add.png
+   :width: {width}
 """.format(path=os.path.dirname(os.path.abspath(__file__)), sep=os.path.sep, width='1.5em')
