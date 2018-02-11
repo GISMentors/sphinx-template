@@ -31,8 +31,10 @@ from utils import get_month_year
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 sys.path.append(os.path.abspath(os.path.join('..', 'sphinx-template', '_extensions')))
-extensions = [ 'sphinx.ext.extlinks', 'sphinx.ext.todo', 'sphinx.ext.mathjax',
+extensions = [ 'sphinx.ext.extlinks', 'sphinx.ext.todo', 'sphinx.ext.imgmath', 
                'video', 'notes', 'autoimage', 'writter']
+# problem with loading, disabled
+# 'sphinx.ext.mathjax',
 if version_info[0] <= 1 and version_info[1] < 6:
     extensions.append('numfig')
 else:
@@ -274,6 +276,9 @@ rst_prolog = """
 
 .. role:: item
     :class: item
+
+.. role:: param
+    :class: param
 
 .. role:: dbtable
    :class: dbtable

@@ -542,6 +542,11 @@ span.sqlcmd {
     font-weight: bold;
 }
 
+span.param {
+  font-family: monospace;
+  color: rgb(50, 50, 50);
+}
+
 span.guilabel, span.item {
   font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;
   background-color: #dddddd;
