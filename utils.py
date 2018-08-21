@@ -2,7 +2,7 @@
 import datetime
 import locale
 
-def get_month_year(force_locale='cs_CZ.UTF-8'):
+def get_month_year(force_locale='en_US.UTF-8'):
     locale.setlocale(locale.LC_ALL, force_locale)
     from calendar import month_name
     
