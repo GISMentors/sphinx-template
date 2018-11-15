@@ -44,8 +44,18 @@ class NoteDataset(directives.admonitions.BaseAdmonition):
         
         return super(NoteDataset, self).run()
 
+class Task(directives.admonitions.BaseAdmonition):
+    required_arguments = 1
+    node_class = nodes.admonition
+
+    def run(self):
+        self.options['classes'] = ['task']
+        self.arguments[0] = 'Úkol: {}'.format(self.arguments[0])
+        return super(Task, self).run()
+
 def setup(builder):
     directives.register_directive('notecmd', NoteCmd)
     directives.register_directive('notegrass6', NoteGRASS6)
     directives.register_directive('noteadvanced', NoteAdvanced)
     directives.register_directive('notedata', NoteDataset)
+    directives.register_directive('task', Task)
