@@ -37,10 +37,9 @@ Poznámky
 
 .. notedata:: Text
 
-.. task:: Zadani ukolu
+.. task:: Zadání
 
-   Reseni...
-          
+
 Video
 =====
 

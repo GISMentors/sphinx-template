@@ -45,12 +45,12 @@ class NoteDataset(directives.admonitions.BaseAdmonition):
         return super(NoteDataset, self).run()
 
 class Task(directives.admonitions.BaseAdmonition):
-    required_arguments = 1
+    required_arguments = 0
     node_class = nodes.admonition
 
     def run(self):
         self.options['classes'] = ['task']
-        self.arguments[0] = 'Úkol: {}'.format(self.arguments[0])
+        self.arguments = ['Úkol']
         return super(Task, self).run()
 
 def setup(builder):
