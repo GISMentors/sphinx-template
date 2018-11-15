@@ -50,7 +50,7 @@ class Task(directives.admonitions.BaseAdmonition):
 
     def run(self):
         self.options['classes'] = ['task']
-        self.arguments = ['Úkol']
+        self.arguments = [u'Úkol']
         return super(Task, self).run()
 
 def setup(builder):
