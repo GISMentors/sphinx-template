@@ -55,6 +55,7 @@ extlinks = {'grasscmd': ('http://grass.osgeo.org/grass74/manuals/%s.html', ''),
             'pygrass-modules' : ('http://grass.osgeo.org/grass74/manuals/libpython/pygrass.modules.interface.html#pygrass.modules.interface.module.%s', ''),
             'pygrass-vector' : ('http://grass.osgeo.org/grass74/manuals/libpython/pygrass.vector.html#pygrass.vector.%s', ''),
             'pygrass-raster' : ('http://grass.osgeo.org/grass74/manuals/libpython/pygrass.raster.html#pygrass.raster.%s', ''),
+            'python3': ('https://docs.python.org/3/library/%s.html', ''),
             }
 
 # Add any paths that contain templates here, relative to this directory.
