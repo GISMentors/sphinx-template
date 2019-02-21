@@ -375,6 +375,18 @@ rst_prolog += """
     :width: {width}
 .. |mActionRemoveLayer| image:: ../images/icon/mActionRemoveLayer.png
     :width: {width}
+.. |mActionLocalCumulativeCutStretch| image:: ../images/icon/mActionLocalCumulativeCutStretch.png
+    :width: {width}
+.. |mActionFullHistogramStretch| image:: ../images/icon/mActionFullHistogramStretch.png
+    :width: {width}
+.. |mIconZoom| image:: ../images/icon/mIconZoom.png
+    :width: {width}
+.. |mActionContextHelp| image:: ../images/icon/mActionContextHelp.png
+    :width: {width}
+.. |mActionFileOpen| image:: ../images/icon/mActionFileOpen.png
+    :width: {width}
+.. |mActionFileSave| image:: ../images/icon/mActionFileSave.png
+    :width: {width}
 """.format(path=os.path.dirname(os.path.abspath(__file__)), sep=os.path.sep, width='1.5em')
 
 ### GRASS icons
