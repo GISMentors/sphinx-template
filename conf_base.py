@@ -309,6 +309,8 @@ rst_prolog += """
    :width: {width}
 .. |mIconRaster| image:: ../images/icon/mIconRaster.png
    :width: {width}
+.. |mIconLineLayer| image:: ../images/icon/mIconLineLayer.png
+   :width: {width}
 .. |extents| image:: ../images/icon/extents.png
    :width: {width}
 .. |tracking| image:: ../images/icon/tracking.png
