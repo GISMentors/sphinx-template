@@ -40,7 +40,7 @@ class NoteDataset(directives.admonitions.BaseAdmonition):
     def run(self):
         self.options['classes'] = ['note']
         self.arguments.append(u'Poznámka k datové sadě GISMentors')
-        self.content.append(ViewList([u'Datová sada GISMentors je založena na datech pocházejících pouze z otevřených či veřejných zdrojů jako je `EU-DEM <http://www.eea.europa.eu/data-and-maps/data/eu-dem>`_, `RÚIAN <http://www.cuzk.cz/ruian/RUIAN.aspx>`_, `OpenStreetMap <http://wiki.openstreetmap.org/wiki/Main_Page>`_, `Dibavod <http://www.dibavod.cz/>`_ a `IPR <http://www.geoportalpraha.cz/cs/opendata>`_.']))
+        self.content.append(ViewList([u'Datová sada GISMentors je založena na datech pocházejících pouze z otevřených či veřejných zdrojů jako je `EU-DEM <http://www.eea.europa.eu/data-and-maps/data/eu-dem>`__, `RÚIAN <http://www.cuzk.cz/ruian/RUIAN.aspx>`__, `OpenStreetMap <http://wiki.openstreetmap.org/wiki/Main_Page>`__, `Dibavod <http://www.dibavod.cz/>`__,  `AOPK <http://gis-aopkcr.opendata.arcgis.com/>`__ a `IPR <http://www.geoportalpraha.cz/cs/opendata>`__.']))
         
         return super(NoteDataset, self).run()
 
