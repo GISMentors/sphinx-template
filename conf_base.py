@@ -295,16 +295,85 @@ rst_prolog = """
 
 .. role:: lcode
    :class: lcode
+"""
 
+### QGIS icons
+rst_prolog += """
 .. |mIconPostgis| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconPostgis.png
-   :width: 24px
+   :width: {width}
 .. |mActionAddPostgisLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddPostgisLayer.png
-   :width: 24px
+   :width: {width}
 .. |mIconEditable| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconEditable.png
-   :width: 24px
+   :width: {width}
 .. |mActionCapturePolygon| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionCapturePolygon.png
-   :width: 24px
-""".format(path=os.path.dirname(os.path.abspath(__file__)), sep=os.path.sep)
+   :width: {width}
+.. |mIconRaster| image:: ../images/icon/mIconRaster.png
+   :width: {width}
+.. |extents| image:: ../images/icon/extents.png
+   :width: {width}
+.. |tracking| image:: ../images/icon/tracking.png
+   :width: {width}
+.. |symbologyAdd| image:: ../images/icon/symbologyAdd.png
+   :width: {width}
+.. |symbologyRemove| image:: ../images/icon/symbologyRemove.png
+   :width: {width}
+.. |CRS| image:: ../images/icon/CRS.png
+   :width: {width}
+.. |mMessageLog| image:: ../images/icon/mMessageLog.png
+   :width: {width}
+.. |mActionZoomOut| image:: ../images/icon/mActionZoomOut.png
+   :width: {width}
+.. |mActionZoomIn| image:: ../images/icon/mActionZoomIn.png
+   :width: {width}
+.. |mActionZoomLast| image:: ../images/icon/mActionZoomLast.png
+   :width: {width}
+.. |mActionZoomNext| image:: ../images/icon/mActionZoomNext.png
+   :width: {width}
+.. |mActionZoomToLayer| image:: ../images/icon/mActionZoomToLayer.png
+   :width: {width}
+.. |mActionZoomFullExtent| image:: ../images/icon/mActionZoomFullExtent.png
+   :width: {width}
+.. |mActionPan| image:: ../images/icon/mActionPan.png
+   :width: {width}
+.. |mActionRefresh| image:: ../images/icon/mActionRefresh.png
+    :width: {width}
+.. |mActionSelectRectangle| image:: ../images/icon/mActionSelectRectangle.png
+    :width: {width}
+.. |mActionSelectPolygon| image:: ../images/icon/mActionSelectPolygon.png
+    :width: {width}
+.. |mActionSelectFreehand| image:: ../images/icon/mActionSelectFreehand.png
+    :width: {width}
+.. |mActionSelectRadius| image:: ../images/icon/mActionSelectRadius.png
+    :width: {width}
+.. |mIconExpressionSelect| image:: ../images/icon/mIconExpressionSelect.png
+    :width: {width}
+.. |mActionUnselectAttributes| image:: ../images/icon/mActionUnselectAttributes.png
+    :width: {width}
+.. |mActionZoomToSelected| image:: ../images/icon/mActionZoomToSelected.png
+    :width: {width}
+.. |mActionPanToSelected| image:: ../images/icon/mActionPanToSelected.png
+    :width: {width}
+.. |mActionMeasureArea| image:: ../images/icon/mActionMeasureArea.png
+    :width: {width}
+.. |mActionMeasure| image:: ../images/icon/mActionMeasure.png
+    :width: {width}
+.. |mActionMeasureAngle| image:: ../images/icon/mActionMeasureAngle.png
+    :width: {width}
+.. |mActionIdentify| image:: ../images/icon/mActionIdentify.png
+    :width: {width}
+.. |rendering_bar| image:: ../images/icon/rendering_bar.png
+    :width: 4.5em
+.. |polygon| image:: ../images/icon/polygon.png
+    :width: 1.2em
+.. |polyline| image:: ../images/icon/polyline.png
+    :width: 1.2em
+.. |point| image:: ../images/icon/point.png
+    :width: 1.2em
+.. |mActionAddGroup| image:: ../images/icon/mActionAddGroup.png
+    :width: {width}
+.. |mActionRemoveLayer| image:: ../images/icon/mActionRemoveLayer.png
+    :width: {width}
+""".format(path=os.path.dirname(os.path.abspath(__file__)), sep=os.path.sep, width='1.5em')
 
 ### GRASS icons
 rst_prolog += """
