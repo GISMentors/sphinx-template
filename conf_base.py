@@ -1433,6 +1433,84 @@ rst_prolog += """
    :width: {width}
 .. |zoomMaster| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}zoomMaster.png
    :width: {width}
+.. |mAlgorithmAddGeometryAttributes| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmAddGeometryAttributes.png
+   :width: {width}
+.. |mAlgorithmBasicStatistics| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmBasicStatistics.png
+   :width: {width}
+.. |mAlgorithmBuffer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmBuffer.png
+   :width: {width}
+.. |mAlgorithmCentroids| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmCentroids.png
+   :width: {width}
+.. |mAlgorithmCheckGeometry| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmCheckGeometry.png
+   :width: {width}
+.. |mAlgorithmClip| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmClip.png
+   :width: {width}
+.. |mAlgorithmCollect| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmCollect.png
+   :width: {width}
+.. |mAlgorithmConcaveHull| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmConcaveHull.png
+   :width: {width}
+.. |mAlgorithmConvexHull| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmConvexHull.png
+   :width: {width}
+.. |mAlgorithmCreateGrid| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmCreateGrid.png
+   :width: {width}
+.. |mAlgorithmDelaunay| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmDelaunay.png
+   :width: {width}
+.. |mAlgorithmDifference| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmDifference.png
+   :width: {width}
+.. |mAlgorithmDissolve| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmDissolve.png
+   :width: {width}
+.. |mAlgorithmDistanceMatrix| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmDistanceMatrix.png
+   :width: {width}
+.. |mAlgorithmExtractLayerExtent| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmExtractLayerExtent.png
+   :width: {width}
+.. |mAlgorithmExtractVertices| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmExtractVertices.png
+   :width: {width}
+.. |mAlgorithmIntersect| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmIntersect.png
+   :width: {width}
+.. |mAlgorithmLineIntersections| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmLineIntersections.png
+   :width: {width}
+.. |mAlgorithmLineToPolygon| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmLineToPolygon.png
+   :width: {width}
+.. |mAlgorithmMeanCoordinates| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmMeanCoordinates.png
+   :width: {width}
+.. |mAlgorithmMergeLayers| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmMergeLayers.png
+   :width: {width}
+.. |mAlgorithmMultiToSingle| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmMultiToSingle.png
+   :width: {width}
+.. |mAlgorithmNearestNeighbour| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmNearestNeighbour.png
+   :width: {width}
+.. |mAlgorithmNetworkAnalysis| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmNetworkAnalysis.png
+   :width: {width}
+.. |mAlgorithmPolygonToLine| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmPolygonToLine.png
+   :width: {width}
+.. |mAlgorithmRandomPointsWithinExtent| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmRandomPointsWithinExtent.png
+   :width: {width}
+.. |mAlgorithmRandomPointsWithinPolygon| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmRandomPointsWithinPolygon.png
+   :width: {width}
+.. |mAlgorithmRegularPoints| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmRegularPoints.png
+   :width: {width}
+.. |mAlgorithmSelectLocation| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmSelectLocation.png
+   :width: {width}
+.. |mAlgorithmSelectRandom| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmSelectRandom.png
+   :width: {width}
+.. |mAlgorithmSimplify| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmSimplify.png
+   :width: {width}
+.. |mAlgorithmSingleToMulti| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmSingleToMulti.png
+   :width: {width}
+.. |mAlgorithmSplitLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmSplitLayer.png
+   :width: {width}
+.. |mAlgorithmSumLengthLines| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmSumLengthLines.png
+   :width: {width}
+.. |mAlgorithmSumPoints| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmSumPoints.png
+   :width: {width}
+.. |mAlgorithmSymmetricalDifference| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmSymmetricalDifference.png
+   :width: {width}
+.. |mAlgorithmUnion| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmUnion.png
+   :width: {width}
+.. |mAlgorithmUniqueValues| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmUniqueValues.png
+   :width: {width}
+.. |mAlgorithmVoronoi| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmVoronoi.png
+   :width: {width}
 """.format(path=os.path.dirname(os.path.abspath(__file__)), sep=os.path.sep, width='1.5em')
 
 ### GRASS icons
