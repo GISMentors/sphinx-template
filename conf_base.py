@@ -299,94 +299,1140 @@ rst_prolog = """
 
 ### QGIS icons
 rst_prolog += """
-.. |mIconPostgis| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconPostgis.png
+.. |3d| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}3d.png
+   :width: {width}
+.. |cap_flat| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}cap_flat.png
+   :width: {width}
+.. |cap_round| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}cap_round.png
+   :width: {width}
+.. |cap_square| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}cap_square.png
+   :width: {width}
+.. |cap_style| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}cap_style.png
+   :width: {width}
+.. |clearInput| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}clearInput.png
+   :width: {width}
+.. |copyright_label| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}copyright_label.png
+   :width: {width}
+.. |dbmanager| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}dbmanager.png
+   :width: {width}
+.. |dependencies| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}dependencies.png
+   :width: {width}
+.. |diagramNone| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}diagramNone.png
+   :width: {width}
+.. |digitisingIconsMaster| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}digitisingIconsMaster.png
+   :width: {width}
+.. |downloading_svg| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}downloading_svg.png
+   :width: {width}
+.. |extents| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}extents.png
+   :width: {width}
+.. |favourites| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}favourites.png
+   :width: {width}
+.. |generalIconsMaster| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}generalIconsMaster.png
+   :width: {width}
+.. |geographic| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}geographic.png
+   :width: {width}
+.. |grass_location| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}grass_location.png
+   :width: {width}
+.. |grass_mapset| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}grass_mapset.png
+   :width: {width}
+.. |grass_mapset_open| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}grass_mapset_open.png
+   :width: {width}
+.. |grass_mapset_search| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}grass_mapset_search.png
+   :width: {width}
+.. |heatmap| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}heatmap.png
+   :width: {width}
+.. |histogram| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}histogram.png
+   :width: {width}
+.. |join_bevel| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}join_bevel.png
+   :width: {width}
+.. |join_miter| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}join_miter.png
+   :width: {width}
+.. |join_round| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}join_round.png
+   :width: {width}
+.. |join_style| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}join_style.png
+   :width: {width}
+.. |labelingNone| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}labelingNone.png
+   :width: {width}
+.. |labelingObstacle| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}labelingObstacle.png
+   :width: {width}
+.. |labelingRuleBased| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}labelingRuleBased.png
+   :width: {width}
+.. |labelingSingle| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}labelingSingle.png
+   :width: {width}
+.. |legend| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}legend.png
+   :width: {width}
+.. |locked| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}locked.png
+   :width: {width}
+.. |lockedGray| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}lockedGray.png
+   :width: {width}
+.. |locked_repeating| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}locked_repeating.png
+   :width: {width}
+.. |mAction| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAction.png
+   :width: {width}
+.. |mActionActive| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionActive.png
+   :width: {width}
+.. |mActionAdd| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAdd.png
+   :width: {width}
+.. |mActionAdd3DMap| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAdd3DMap.png
+   :width: {width}
+.. |mActionAddAfsLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddAfsLayer.png
+   :width: {width}
+.. |mActionAddAllToOverview| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddAllToOverview.png
+   :width: {width}
+.. |mActionAddAmsLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddAmsLayer.png
+   :width: {width}
+.. |mActionAddArrow| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddArrow.png
+   :width: {width}
+.. |mActionAddBasicCircle| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddBasicCircle.png
+   :width: {width}
+.. |mActionAddBasicRectangle| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddBasicRectangle.png
+   :width: {width}
+.. |mActionAddBasicShape| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddBasicShape.png
+   :width: {width}
+.. |mActionAddBasicTriangle| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddBasicTriangle.png
+   :width: {width}
+.. |mActionAddDb2Layer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddDb2Layer.png
+   :width: {width}
+.. |mActionAddDelimitedTextLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddDelimitedTextLayer.png
+   :width: {width}
+.. |mActionAddGPSLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddGPSLayer.png
+   :width: {width}
+.. |mActionAddGeoPackageLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddGeoPackageLayer.png
+   :width: {width}
+.. |mActionAddGeonodeLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddGeonodeLayer.png
+   :width: {width}
+.. |mActionAddGroup| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddGroup.png
+   :width: {width}
+.. |mActionAddHtml| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddHtml.png
+   :width: {width}
+.. |mActionAddImage| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddImage.png
+   :width: {width}
+.. |mActionAddLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddLayer.png
+   :width: {width}
+.. |mActionAddLegend| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddLegend.png
+   :width: {width}
+.. |mActionAddMap| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddMap.png
+   :width: {width}
+.. |mActionAddMeshLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddMeshLayer.png
+   :width: {width}
+.. |mActionAddMssqlLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddMssqlLayer.png
+   :width: {width}
+.. |mActionAddNodesItem| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddNodesItem.png
+   :width: {width}
+.. |mActionAddNonDbLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddNonDbLayer.png
+   :width: {width}
+.. |mActionAddOgrLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddOgrLayer.png
+   :width: {width}
+.. |mActionAddOracleLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddOracleLayer.png
+   :width: {width}
+.. |mActionAddPart| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddPart.png
+   :width: {width}
+.. |mActionAddPolygon| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddPolygon.png
+   :width: {width}
+.. |mActionAddPolyline| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddPolyline.png
    :width: {width}
 .. |mActionAddPostgisLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddPostgisLayer.png
    :width: {width}
-.. |mIconEditable| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconEditable.png
+.. |mActionAddRasterLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddRasterLayer.png
+   :width: {width}
+.. |mActionAddRing| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddRing.png
+   :width: {width}
+.. |mActionAddSpatiaLiteLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddSpatiaLiteLayer.png
+   :width: {width}
+.. |mActionAddTable| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddTable.png
+   :width: {width}
+.. |mActionAddVertex| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddVertex.png
+   :width: {width}
+.. |mActionAddVirtualLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddVirtualLayer.png
+   :width: {width}
+.. |mActionAddWcsLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddWcsLayer.png
+   :width: {width}
+.. |mActionAddWfsLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddWfsLayer.png
+   :width: {width}
+.. |mActionAddWmsLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddWmsLayer.png
+   :width: {width}
+.. |mActionAlignBottom| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAlignBottom.png
+   :width: {width}
+.. |mActionAlignHCenter| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAlignHCenter.png
+   :width: {width}
+.. |mActionAlignLeft| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAlignLeft.png
+   :width: {width}
+.. |mActionAlignRight| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAlignRight.png
+   :width: {width}
+.. |mActionAlignTop| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAlignTop.png
+   :width: {width}
+.. |mActionAlignVCenter| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAlignVCenter.png
+   :width: {width}
+.. |mActionAllEdits| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAllEdits.png
+   :width: {width}
+.. |mActionAnnotation| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAnnotation.png
+   :width: {width}
+.. |mActionArrowDown| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionArrowDown.png
+   :width: {width}
+.. |mActionArrowLeft| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionArrowLeft.png
+   :width: {width}
+.. |mActionArrowRight| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionArrowRight.png
+   :width: {width}
+.. |mActionArrowUp| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionArrowUp.png
+   :width: {width}
+.. |mActionAtlasFirst| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAtlasFirst.png
+   :width: {width}
+.. |mActionAtlasLast| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAtlasLast.png
+   :width: {width}
+.. |mActionAtlasNext| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAtlasNext.png
+   :width: {width}
+.. |mActionAtlasPrev| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAtlasPrev.png
+   :width: {width}
+.. |mActionAtlasSettings| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAtlasSettings.png
+   :width: {width}
+.. |mActionCalculateField| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionCalculateField.png
+   :width: {width}
+.. |mActionCancelAllEdits| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionCancelAllEdits.png
+   :width: {width}
+.. |mActionCancelEdits| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionCancelEdits.png
+   :width: {width}
+.. |mActionCaptureLine| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionCaptureLine.png
+   :width: {width}
+.. |mActionCapturePoint| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionCapturePoint.png
    :width: {width}
 .. |mActionCapturePolygon| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionCapturePolygon.png
    :width: {width}
-.. |mIconRaster| image:: ../images/icon/mIconRaster.png
+.. |mActionChangeLabelProperties| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionChangeLabelProperties.png
    :width: {width}
-.. |mIconLineLayer| image:: ../images/icon/mIconLineLayer.png
+.. |mActionCheckQgisVersion| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionCheckQgisVersion.png
    :width: {width}
-.. |extents| image:: ../images/icon/extents.png
+.. |mActionCircle2Points| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionCircle2Points.png
    :width: {width}
-.. |tracking| image:: ../images/icon/tracking.png
+.. |mActionCircle2TangentsPoint| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionCircle2TangentsPoint.png
    :width: {width}
-.. |symbologyAdd| image:: ../images/icon/symbologyAdd.png
+.. |mActionCircle3Points| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionCircle3Points.png
    :width: {width}
-.. |symbologyRemove| image:: ../images/icon/symbologyRemove.png
+.. |mActionCircle3Tangents| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionCircle3Tangents.png
    :width: {width}
-.. |CRS| image:: ../images/icon/CRS.png
+.. |mActionCircleCenterPoint| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionCircleCenterPoint.png
    :width: {width}
-.. |mMessageLog| image:: ../images/icon/mMessageLog.png
+.. |mActionCircleExtent| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionCircleExtent.png
    :width: {width}
-.. |mActionZoomOut| image:: ../images/icon/mActionZoomOut.png
+.. |mActionCircularStringCurvePoint| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionCircularStringCurvePoint.png
    :width: {width}
-.. |mActionZoomIn| image:: ../images/icon/mActionZoomIn.png
+.. |mActionCircularStringRadius| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionCircularStringRadius.png
    :width: {width}
-.. |mActionZoomLast| image:: ../images/icon/mActionZoomLast.png
+.. |mActionCollapseTree| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionCollapseTree.png
    :width: {width}
-.. |mActionZoomNext| image:: ../images/icon/mActionZoomNext.png
+.. |mActionComposerManager| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionComposerManager.png
    :width: {width}
-.. |mActionZoomToLayer| image:: ../images/icon/mActionZoomToLayer.png
+.. |mActionConditionalFormatting| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionConditionalFormatting.png
    :width: {width}
-.. |mActionZoomFullExtent| image:: ../images/icon/mActionZoomFullExtent.png
+.. |mActionContextHelp| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionContextHelp.png
    :width: {width}
-.. |mActionPan| image:: ../images/icon/mActionPan.png
+.. |mActionCopySelected| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionCopySelected.png
    :width: {width}
-.. |mActionRefresh| image:: ../images/icon/mActionRefresh.png
-    :width: {width}
-.. |mActionSelectRectangle| image:: ../images/icon/mActionSelectRectangle.png
-    :width: {width}
-.. |mActionSelectPolygon| image:: ../images/icon/mActionSelectPolygon.png
-    :width: {width}
-.. |mActionSelectFreehand| image:: ../images/icon/mActionSelectFreehand.png
-    :width: {width}
-.. |mActionSelectRadius| image:: ../images/icon/mActionSelectRadius.png
-    :width: {width}
-.. |mIconExpressionSelect| image:: ../images/icon/mIconExpressionSelect.png
-    :width: {width}
-.. |mActionUnselectAttributes| image:: ../images/icon/mActionUnselectAttributes.png
-    :width: {width}
-.. |mActionZoomToSelected| image:: ../images/icon/mActionZoomToSelected.png
-    :width: {width}
-.. |mActionPanToSelected| image:: ../images/icon/mActionPanToSelected.png
-    :width: {width}
-.. |mActionMeasureArea| image:: ../images/icon/mActionMeasureArea.png
-    :width: {width}
-.. |mActionMeasure| image:: ../images/icon/mActionMeasure.png
-    :width: {width}
-.. |mActionMeasureAngle| image:: ../images/icon/mActionMeasureAngle.png
-    :width: {width}
-.. |mActionIdentify| image:: ../images/icon/mActionIdentify.png
-    :width: {width}
-.. |rendering_bar| image:: ../images/icon/rendering_bar.png
-    :width: 4.5em
-.. |polygon| image:: ../images/icon/polygon.png
-    :width: 1.2em
-.. |polyline| image:: ../images/icon/polyline.png
-    :width: 1.2em
-.. |point| image:: ../images/icon/point.png
-    :width: 1.2em
-.. |mActionAddGroup| image:: ../images/icon/mActionAddGroup.png
-    :width: {width}
-.. |mActionRemoveLayer| image:: ../images/icon/mActionRemoveLayer.png
-    :width: {width}
-.. |mActionLocalCumulativeCutStretch| image:: ../images/icon/mActionLocalCumulativeCutStretch.png
-    :width: {width}
-.. |mActionFullHistogramStretch| image:: ../images/icon/mActionFullHistogramStretch.png
-    :width: {width}
-.. |mIconZoom| image:: ../images/icon/mIconZoom.png
-    :width: {width}
-.. |mActionContextHelp| image:: ../images/icon/mActionContextHelp.png
-    :width: {width}
-.. |mActionFileOpen| image:: ../images/icon/mActionFileOpen.png
-    :width: {width}
-.. |mActionFileSave| image:: ../images/icon/mActionFileSave.png
-    :width: {width}
+.. |mActionCreateMemory| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionCreateMemory.png
+   :width: {width}
+.. |mActionCreateTable| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionCreateTable.png
+   :width: {width}
+.. |mActionCustomProjection| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionCustomProjection.png
+   :width: {width}
+.. |mActionDataSourceManager| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDataSourceManager.png
+   :width: {width}
+.. |mActionDecreaseBrightness| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDecreaseBrightness.png
+   :width: {width}
+.. |mActionDecreaseContrast| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDecreaseContrast.png
+   :width: {width}
+.. |mActionDecreaseFont| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDecreaseFont.png
+   :width: {width}
+.. |mActionDeleteAttribute| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDeleteAttribute.png
+   :width: {width}
+.. |mActionDeletePart| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDeletePart.png
+   :width: {width}
+.. |mActionDeleteRing| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDeleteRing.png
+   :width: {width}
+.. |mActionDeleteSelected| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDeleteSelected.png
+   :width: {width}
+.. |mActionDeleteTable| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDeleteTable.png
+   :width: {width}
+.. |mActionDeleteVertex| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDeleteVertex.png
+   :width: {width}
+.. |mActionDeselectAll| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDeselectAll.png
+   :width: {width}
+.. |mActionDistributeBottom| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDistributeBottom.png
+   :width: {width}
+.. |mActionDistributeHCenter| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDistributeHCenter.png
+   :width: {width}
+.. |mActionDistributeLeft| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDistributeLeft.png
+   :width: {width}
+.. |mActionDistributeRight| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDistributeRight.png
+   :width: {width}
+.. |mActionDistributeTop| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDistributeTop.png
+   :width: {width}
+.. |mActionDistributeVCenter| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDistributeVCenter.png
+   :width: {width}
+.. |mActionDraw| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDraw.png
+   :width: {width}
+.. |mActionDuplicateComposer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDuplicateComposer.png
+   :width: {width}
+.. |mActionDuplicateFeature| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDuplicateFeature.png
+   :width: {width}
+.. |mActionDuplicateFeatureDigitized| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDuplicateFeatureDigitized.png
+   :width: {width}
+.. |mActionDuplicateLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDuplicateLayer.png
+   :width: {width}
+.. |mActionDuplicateLayout| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDuplicateLayout.png
+   :width: {width}
+.. |mActionEditCopy| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionEditCopy.png
+   :width: {width}
+.. |mActionEditCut| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionEditCut.png
+   :width: {width}
+.. |mActionEditHelpContent| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionEditHelpContent.png
+   :width: {width}
+.. |mActionEditNodesItem| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionEditNodesItem.png
+   :width: {width}
+.. |mActionEditPaste| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionEditPaste.png
+   :width: {width}
+.. |mActionEditTable| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionEditTable.png
+   :width: {width}
+.. |mActionEllipseCenter2Points| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionEllipseCenter2Points.png
+   :width: {width}
+.. |mActionEllipseCenterPoint| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionEllipseCenterPoint.png
+   :width: {width}
+.. |mActionEllipseExtent| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionEllipseExtent.png
+   :width: {width}
+.. |mActionEllipseFoci| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionEllipseFoci.png
+   :width: {width}
+.. |mActionExpandNewTree| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionExpandNewTree.png
+   :width: {width}
+.. |mActionExpandTree| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionExpandTree.png
+   :width: {width}
+.. |mActionExport| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionExport.png
+   :width: {width}
+.. |mActionExportMapServer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionExportMapServer.png
+   :width: {width}
+.. |mActionFileExit| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionFileExit.png
+   :width: {width}
+.. |mActionFileNew| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionFileNew.png
+   :width: {width}
+.. |mActionFileOpen| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionFileOpen.png
+   :width: {width}
+.. |mActionFilePrint| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionFilePrint.png
+   :width: {width}
+.. |mActionFileSave| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionFileSave.png
+   :width: {width}
+.. |mActionFileSaveAs| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionFileSaveAs.png
+   :width: {width}
+.. |mActionFileSmall| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionFileSmall.png
+   :width: {width}
+.. |mActionFillRing| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionFillRing.png
+   :width: {width}
+.. |mActionFilter| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionFilter.png
+   :width: {width}
+.. |mActionFilter2| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionFilter2.png
+   :width: {width}
+.. |mActionFilterTableFields| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionFilterTableFields.png
+   :width: {width}
+.. |mActionFindReplace| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionFindReplace.png
+   :width: {width}
+.. |mActionFolder| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionFolder.png
+   :width: {width}
+.. |mActionFormAnnotation| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionFormAnnotation.png
+   :width: {width}
+.. |mActionFormView| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionFormView.png
+   :width: {width}
+.. |mActionFreezeLabels| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionFreezeLabels.png
+   :width: {width}
+.. |mActionFromSelectedFeature| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionFromSelectedFeature.png
+   :width: {width}
+.. |mActionFullCumulativeCutStretch| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionFullCumulativeCutStretch.png
+   :width: {width}
+.. |mActionFullHistogramStretch| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionFullHistogramStretch.png
+   :width: {width}
+.. |mActionGroupItems| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionGroupItems.png
+   :width: {width}
+.. |mActionHelpAPI| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionHelpAPI.png
+   :width: {width}
+.. |mActionHelpAbout| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionHelpAbout.png
+   :width: {width}
+.. |mActionHelpContents| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionHelpContents.png
+   :width: {width}
+.. |mActionHelpSponsors| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionHelpSponsors.png
+   :width: {width}
+.. |mActionHideAllLayers| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionHideAllLayers.png
+   :width: {width}
+.. |mActionHideDeselectedLayers| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionHideDeselectedLayers.png
+   :width: {width}
+.. |mActionHideSelectedLayers| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionHideSelectedLayers.png
+   :width: {width}
+.. |mActionHighlightFeature| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionHighlightFeature.png
+   :width: {width}
+.. |mActionHistory| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionHistory.png
+   :width: {width}
+.. |mActionHtmlAnnotation| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionHtmlAnnotation.png
+   :width: {width}
+.. |mActionIconView| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionIconView.png
+   :width: {width}
+.. |mActionIdentify| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionIdentify.png
+   :width: {width}
+.. |mActionIdentifyByFreehand| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionIdentifyByFreehand.png
+   :width: {width}
+.. |mActionIdentifyByPolygon| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionIdentifyByPolygon.png
+   :width: {width}
+.. |mActionIdentifyByRadius| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionIdentifyByRadius.png
+   :width: {width}
+.. |mActionIdentifyByRectangle| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionIdentifyByRectangle.png
+   :width: {width}
+.. |mActionInOverview| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionInOverview.png
+   :width: {width}
+.. |mActionIncreaseBrightness| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionIncreaseBrightness.png
+   :width: {width}
+.. |mActionIncreaseContrast| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionIncreaseContrast.png
+   :width: {width}
+.. |mActionIncreaseFont| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionIncreaseFont.png
+   :width: {width}
+.. |mActionInterfaceCustomization| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionInterfaceCustomization.png
+   :width: {width}
+.. |mActionInvertSelection| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionInvertSelection.png
+   :width: {width}
+.. |mActionKeyboardShortcuts| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionKeyboardShortcuts.png
+   :width: {width}
+.. |mActionLabel| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionLabel.png
+   :width: {width}
+.. |mActionLabeling| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionLabeling.png
+   :width: {width}
+.. |mActionLayoutManager| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionLayoutManager.png
+   :width: {width}
+.. |mActionLink| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionLink.png
+   :width: {width}
+.. |mActionLocalCumulativeCutStretch| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionLocalCumulativeCutStretch.png
+   :width: {width}
+.. |mActionLocalHistogramStretch| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionLocalHistogramStretch.png
+   :width: {width}
+.. |mActionLockExtent| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionLockExtent.png
+   :width: {width}
+.. |mActionLockItems| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionLockItems.png
+   :width: {width}
+.. |mActionLowerItems| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionLowerItems.png
+   :width: {width}
+.. |mActionMapIdentification| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMapIdentification.png
+   :width: {width}
+.. |mActionMapSettings| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMapSettings.png
+   :width: {width}
+.. |mActionMapTips| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMapTips.png
+   :width: {width}
+.. |mActionMeasure| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMeasure.png
+   :width: {width}
+.. |mActionMeasureAngle| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMeasureAngle.png
+   :width: {width}
+.. |mActionMeasureArea| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMeasureArea.png
+   :width: {width}
+.. |mActionMergeFeatureAttributes| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMergeFeatureAttributes.png
+   :width: {width}
+.. |mActionMergeFeatures| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMergeFeatures.png
+   :width: {width}
+.. |mActionMoveFeature| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMoveFeature.png
+   :width: {width}
+.. |mActionMoveFeatureCopy| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMoveFeatureCopy.png
+   :width: {width}
+.. |mActionMoveFeatureCopyLine| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMoveFeatureCopyLine.png
+   :width: {width}
+.. |mActionMoveFeatureCopyPoint| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMoveFeatureCopyPoint.png
+   :width: {width}
+.. |mActionMoveFeatureLine| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMoveFeatureLine.png
+   :width: {width}
+.. |mActionMoveFeaturePoint| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMoveFeaturePoint.png
+   :width: {width}
+.. |mActionMoveItemContent| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMoveItemContent.png
+   :width: {width}
+.. |mActionMoveItemsToBottom| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMoveItemsToBottom.png
+   :width: {width}
+.. |mActionMoveItemsToTop| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMoveItemsToTop.png
+   :width: {width}
+.. |mActionMoveLabel| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMoveLabel.png
+   :width: {width}
+.. |mActionMoveVertex| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMoveVertex.png
+   :width: {width}
+.. |mActionMultiEdit| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMultiEdit.png
+   :width: {width}
+.. |mActionNew3DMap| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionNew3DMap.png
+   :width: {width}
+.. |mActionNewAttribute| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionNewAttribute.png
+   :width: {width}
+.. |mActionNewBookmark| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionNewBookmark.png
+   :width: {width}
+.. |mActionNewComposer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionNewComposer.png
+   :width: {width}
+.. |mActionNewFolder| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionNewFolder.png
+   :width: {width}
+.. |mActionNewGeoPackageLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionNewGeoPackageLayer.png
+   :width: {width}
+.. |mActionNewLayout| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionNewLayout.png
+   :width: {width}
+.. |mActionNewMap| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionNewMap.png
+   :width: {width}
+.. |mActionNewPage| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionNewPage.png
+   :width: {width}
+.. |mActionNewReport| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionNewReport.png
+   :width: {width}
+.. |mActionNewSpatiaLiteLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionNewSpatiaLiteLayer.png
+   :width: {width}
+.. |mActionNewTableRow| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionNewTableRow.png
+   :width: {width}
+.. |mActionNewVectorLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionNewVectorLayer.png
+   :width: {width}
+.. |mActionNodeTool| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionNodeTool.png
+   :width: {width}
+.. |mActionOffsetCurve| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionOffsetCurve.png
+   :width: {width}
+.. |mActionOffsetPointSymbols| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionOffsetPointSymbols.png
+   :width: {width}
+.. |mActionOpenTable| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionOpenTable.png
+   :width: {width}
+.. |mActionOptions| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionOptions.png
+   :width: {width}
+.. |mActionPan| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionPan.png
+   :width: {width}
+.. |mActionPanHighlightFeature| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionPanHighlightFeature.png
+   :width: {width}
+.. |mActionPanToSelected| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionPanToSelected.png
+   :width: {width}
+.. |mActionPinLabels| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionPinLabels.png
+   :width: {width}
+.. |mActionProcessSelected| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionProcessSelected.png
+   :width: {width}
+.. |mActionProjectProperties| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionProjectProperties.png
+   :width: {width}
+.. |mActionPropertiesWidget| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionPropertiesWidget.png
+   :width: {width}
+.. |mActionPropertyItem| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionPropertyItem.png
+   :width: {width}
+.. |mActionQgisHomePage| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionQgisHomePage.png
+   :width: {width}
+.. |mActionRaiseItems| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionRaiseItems.png
+   :width: {width}
+.. |mActionRectangle3Points| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionRectangle3Points.png
+   :width: {width}
+.. |mActionRectangleCenter| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionRectangleCenter.png
+   :width: {width}
+.. |mActionRectangleExtent| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionRectangleExtent.png
+   :width: {width}
+.. |mActionRedo| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionRedo.png
+   :width: {width}
+.. |mActionRefresh| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionRefresh.png
+   :width: {width}
+.. |mActionRegularPolygon2Points| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionRegularPolygon2Points.png
+   :width: {width}
+.. |mActionRegularPolygonCenterCorner| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionRegularPolygonCenterCorner.png
+   :width: {width}
+.. |mActionRegularPolygonCenterPoint| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionRegularPolygonCenterPoint.png
+   :width: {width}
+.. |mActionReload| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionReload.png
+   :width: {width}
+.. |mActionRemove| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionRemove.png
+   :width: {width}
+.. |mActionRemoveAllFromOverview| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionRemoveAllFromOverview.png
+   :width: {width}
+.. |mActionRemoveLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionRemoveLayer.png
+   :width: {width}
+.. |mActionRemoveSelectedFeature| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionRemoveSelectedFeature.png
+   :width: {width}
+.. |mActionReshape| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionReshape.png
+   :width: {width}
+.. |mActionResizeNarrowest| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionResizeNarrowest.png
+   :width: {width}
+.. |mActionResizeShortest| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionResizeShortest.png
+   :width: {width}
+.. |mActionResizeSquare| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionResizeSquare.png
+   :width: {width}
+.. |mActionResizeTallest| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionResizeTallest.png
+   :width: {width}
+.. |mActionResizeWidest| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionResizeWidest.png
+   :width: {width}
+.. |mActionReverseLine| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionReverseLine.png
+   :width: {width}
+.. |mActionRollbackAllEdits| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionRollbackAllEdits.png
+   :width: {width}
+.. |mActionRollbackEdits| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionRollbackEdits.png
+   :width: {width}
+.. |mActionRotateFeature| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionRotateFeature.png
+   :width: {width}
+.. |mActionRotateLabel| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionRotateLabel.png
+   :width: {width}
+.. |mActionRotatePointSymbols| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionRotatePointSymbols.png
+   :width: {width}
+.. |mActionSaveAllEdits| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSaveAllEdits.png
+   :width: {width}
+.. |mActionSaveAsPDF| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSaveAsPDF.png
+   :width: {width}
+.. |mActionSaveAsPython| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSaveAsPython.png
+   :width: {width}
+.. |mActionSaveAsSVG| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSaveAsSVG.png
+   :width: {width}
+.. |mActionSaveEdits| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSaveEdits.png
+   :width: {width}
+.. |mActionSaveMapAsImage| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSaveMapAsImage.png
+   :width: {width}
+.. |mActionScaleBar| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionScaleBar.png
+   :width: {width}
+.. |mActionScaleHighlightFeature| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionScaleHighlightFeature.png
+   :width: {width}
+.. |mActionScriptOpen| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionScriptOpen.png
+   :width: {width}
+.. |mActionSelect| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSelect.png
+   :width: {width}
+.. |mActionSelectAll| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSelectAll.png
+   :width: {width}
+.. |mActionSelectAllTree| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSelectAllTree.png
+   :width: {width}
+.. |mActionSelectFreehand| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSelectFreehand.png
+   :width: {width}
+.. |mActionSelectPan| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSelectPan.png
+   :width: {width}
+.. |mActionSelectPolygon| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSelectPolygon.png
+   :width: {width}
+.. |mActionSelectRadius| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSelectRadius.png
+   :width: {width}
+.. |mActionSelectRectangle| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSelectRectangle.png
+   :width: {width}
+.. |mActionSelectedToTop| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSelectedToTop.png
+   :width: {width}
+.. |mActionSetProjection| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSetProjection.png
+   :width: {width}
+.. |mActionSharing| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSharing.png
+   :width: {width}
+.. |mActionSharingExport| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSharingExport.png
+   :width: {width}
+.. |mActionSharingImport| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSharingImport.png
+   :width: {width}
+.. |mActionShowAllLayers| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionShowAllLayers.png
+   :width: {width}
+.. |mActionShowAllLayersGray| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionShowAllLayersGray.png
+   :width: {width}
+.. |mActionShowBookmarks| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionShowBookmarks.png
+   :width: {width}
+.. |mActionShowFrozenLabels| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionShowFrozenLabels.png
+   :width: {width}
+.. |mActionShowHideLabels| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionShowHideLabels.png
+   :width: {width}
+.. |mActionShowPinnedLabels| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionShowPinnedLabels.png
+   :width: {width}
+.. |mActionShowPluginManager| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionShowPluginManager.png
+   :width: {width}
+.. |mActionShowRasterCalculator| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionShowRasterCalculator.png
+   :width: {width}
+.. |mActionShowSelectedLayers| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionShowSelectedLayers.png
+   :width: {width}
+.. |mActionSignMinus| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSignMinus.png
+   :width: {width}
+.. |mActionSignPlus| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSignPlus.png
+   :width: {width}
+.. |mActionSimplify| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSimplify.png
+   :width: {width}
+.. |mActionSplitFeatures| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSplitFeatures.png
+   :width: {width}
+.. |mActionSplitParts| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSplitParts.png
+   :width: {width}
+.. |mActionStart| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionStart.png
+   :width: {width}
+.. |mActionStyleManager| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionStyleManager.png
+   :width: {width}
+.. |mActionSum| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSum.png
+   :width: {width}
+.. |mActionSvgAnnotation| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSvgAnnotation.png
+   :width: {width}
+.. |mActionTextAnnotation| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionTextAnnotation.png
+   :width: {width}
+.. |mActionToggleEditing| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionToggleEditing.png
+   :width: {width}
+.. |mActionTouch| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionTouch.png
+   :width: {width}
+.. |mActionTouch2| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionTouch2.png
+   :width: {width}
+.. |mActionTracing| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionTracing.png
+   :width: {width}
+.. |mActionUndo| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionUndo.png
+   :width: {width}
+.. |mActionUngroupItems| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionUngroupItems.png
+   :width: {width}
+.. |mActionUnlink| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionUnlink.png
+   :width: {width}
+.. |mActionUnlockAll| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionUnlockAll.png
+   :width: {width}
+.. |mActionUnselectAttributes| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionUnselectAttributes.png
+   :width: {width}
+.. |mActionVertexTool| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionVertexTool.png
+   :width: {width}
+.. |mActionVertexToolActiveLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionVertexToolActiveLayer.png
+   :width: {width}
+.. |mActionWhatsThis| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionWhatsThis.png
+   :width: {width}
+.. |mActionZoomActual| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionZoomActual.png
+   :width: {width}
+.. |mActionZoomFullExtent| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionZoomFullExtent.png
+   :width: {width}
+.. |mActionZoomIn| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionZoomIn.png
+   :width: {width}
+.. |mActionZoomLast| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionZoomLast.png
+   :width: {width}
+.. |mActionZoomNext| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionZoomNext.png
+   :width: {width}
+.. |mActionZoomOut| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionZoomOut.png
+   :width: {width}
+.. |mActionZoomToArea| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionZoomToArea.png
+   :width: {width}
+.. |mActionZoomToBookmark| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionZoomToBookmark.png
+   :width: {width}
+.. |mActionZoomToLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionZoomToLayer.png
+   :width: {width}
+.. |mActionZoomToSelected| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionZoomToSelected.png
+   :width: {width}
+.. |mAddToProject| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAddToProject.png
+   :width: {width}
+.. |mDockify| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mDockify.png
+   :width: {width}
+.. |mGeoPackage| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mGeoPackage.png
+   :width: {width}
+.. |mIconAfs| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconAfs.png
+   :width: {width}
+.. |mIconAllRings| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconAllRings.png
+   :width: {width}
+.. |mIconAms| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconAms.png
+   :width: {width}
+.. |mIconAtlas| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconAtlas.png
+   :width: {width}
+.. |mIconAutoPlacementSettings| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconAutoPlacementSettings.png
+   :width: {width}
+.. |mIconAuxiliaryStorage| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconAuxiliaryStorage.png
+   :width: {width}
+.. |mIconCertificate| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconCertificate.png
+   :width: {width}
+.. |mIconCertificateMissing| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconCertificateMissing.png
+   :width: {width}
+.. |mIconCertificateTrusted| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconCertificateTrusted.png
+   :width: {width}
+.. |mIconCertificateUntrusted| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconCertificateUntrusted.png
+   :width: {width}
+.. |mIconClear| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconClear.png
+   :width: {width}
+.. |mIconClearText| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconClearText.png
+   :width: {width}
+.. |mIconClearTextHover| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconClearTextHover.png
+   :width: {width}
+.. |mIconClose| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconClose.png
+   :width: {width}
+.. |mIconCloseTab| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconCloseTab.png
+   :width: {width}
+.. |mIconCloseTabHover| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconCloseTabHover.png
+   :width: {width}
+.. |mIconCollapse| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconCollapse.png
+   :width: {width}
+.. |mIconCollapseSmall| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconCollapseSmall.png
+   :width: {width}
+.. |mIconColorBox| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconColorBox.png
+   :width: {width}
+.. |mIconColorPicker| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconColorPicker.png
+   :width: {width}
+.. |mIconColorSwatches| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconColorSwatches.png
+   :width: {width}
+.. |mIconColorWheel| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconColorWheel.png
+   :width: {width}
+.. |mIconConnect| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconConnect.png
+   :width: {width}
+.. |mIconCritical| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconCritical.png
+   :width: {width}
+.. |mIconDataDefine| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconDataDefine.png
+   :width: {width}
+.. |mIconDataDefineError| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconDataDefineError.png
+   :width: {width}
+.. |mIconDataDefineExpression| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconDataDefineExpression.png
+   :width: {width}
+.. |mIconDataDefineExpressionError| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconDataDefineExpressionError.png
+   :width: {width}
+.. |mIconDataDefineExpressionOn| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconDataDefineExpressionOn.png
+   :width: {width}
+.. |mIconDataDefineOn| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconDataDefineOn.png
+   :width: {width}
+.. |mIconDb2| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconDb2.png
+   :width: {width}
+.. |mIconDbSchema| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconDbSchema.png
+   :width: {width}
+.. |mIconDelete| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconDelete.png
+   :width: {width}
+.. |mIconDeselected| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconDeselected.png
+   :width: {width}
+.. |mIconDropDownMenu| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconDropDownMenu.png
+   :width: {width}
+.. |mIconEditable| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconEditable.png
+   :width: {width}
+.. |mIconEditableEdits| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconEditableEdits.png
+   :width: {width}
+.. |mIconExpand| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconExpand.png
+   :width: {width}
+.. |mIconExpandSmall| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconExpandSmall.png
+   :width: {width}
+.. |mIconExpression| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconExpression.png
+   :width: {width}
+.. |mIconExpressionEditorOpen| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconExpressionEditorOpen.png
+   :width: {width}
+.. |mIconExpressionFilter| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconExpressionFilter.png
+   :width: {width}
+.. |mIconExpressionPreview| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconExpressionPreview.png
+   :width: {width}
+.. |mIconExpressionSelect| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconExpressionSelect.png
+   :width: {width}
+.. |mIconExteriorRing| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconExteriorRing.png
+   :width: {width}
+.. |mIconFavourites| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconFavourites.png
+   :width: {width}
+.. |mIconFieldBool| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconFieldBool.png
+   :width: {width}
+.. |mIconFieldDate| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconFieldDate.png
+   :width: {width}
+.. |mIconFieldDateTime| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconFieldDateTime.png
+   :width: {width}
+.. |mIconFieldFloat| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconFieldFloat.png
+   :width: {width}
+.. |mIconFieldInteger| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconFieldInteger.png
+   :width: {width}
+.. |mIconFieldText| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconFieldText.png
+   :width: {width}
+.. |mIconFieldTime| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconFieldTime.png
+   :width: {width}
+.. |mIconFile| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconFile.png
+   :width: {width}
+.. |mIconFileLink| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconFileLink.png
+   :width: {width}
+.. |mIconFirst| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconFirst.png
+   :width: {width}
+.. |mIconFolder| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconFolder.png
+   :width: {width}
+.. |mIconFolderHome| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconFolderHome.png
+   :width: {width}
+.. |mIconFolderLink| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconFolderLink.png
+   :width: {width}
+.. |mIconFolderOpen| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconFolderOpen.png
+   :width: {width}
+.. |mIconFolderProject| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconFolderProject.png
+   :width: {width}
+.. |mIconFormSelect| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconFormSelect.png
+   :width: {width}
+.. |mIconGPU| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconGPU.png
+   :width: {width}
+.. |mIconGeometryLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconGeometryLayer.png
+   :width: {width}
+.. |mIconGeonode| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconGeonode.png
+   :width: {width}
+.. |mIconHistory| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconHistory.png
+   :width: {width}
+.. |mIconInfo| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconInfo.png
+   :width: {width}
+.. |mIconInteriorRings| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconInteriorRings.png
+   :width: {width}
+.. |mIconJoinHasNotUpsertOnEdit| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconJoinHasNotUpsertOnEdit.png
+   :width: {width}
+.. |mIconJoinNotEditable| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconJoinNotEditable.png
+   :width: {width}
+.. |mIconJoinedLayerNotEditable| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconJoinedLayerNotEditable.png
+   :width: {width}
+.. |mIconLabelQuadrantCenter| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconLabelQuadrantCenter.png
+   :width: {width}
+.. |mIconLabelQuadrantOffset| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconLabelQuadrantOffset.png
+   :width: {width}
+.. |mIconLast| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconLast.png
+   :width: {width}
+.. |mIconLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconLayer.png
+   :width: {width}
+.. |mIconLayout| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconLayout.png
+   :width: {width}
+.. |mIconLineLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconLineLayer.png
+   :width: {width}
+.. |mIconListView| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconListView.png
+   :width: {width}
+.. |mIconLock| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconLock.png
+   :width: {width}
+.. |mIconMeshLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconMeshLayer.png
+   :width: {width}
+.. |mIconMssql| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconMssql.png
+   :width: {width}
+.. |mIconNew| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconNew.png
+   :width: {width}
+.. |mIconNext| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconNext.png
+   :width: {width}
+.. |mIconNoPyramid| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconNoPyramid.png
+   :width: {width}
+.. |mIconOracle| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconOracle.png
+   :width: {width}
+.. |mIconOws| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconOws.png
+   :width: {width}
+.. |mIconPaintEffects| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconPaintEffects.png
+   :width: {width}
+.. |mIconPointLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconPointLayer.png
+   :width: {width}
+.. |mIconPolygonLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconPolygonLayer.png
+   :width: {width}
+.. |mIconPostgis| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconPostgis.png
+   :width: {width}
+.. |mIconPrevious| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconPrevious.png
+   :width: {width}
+.. |mIconProjectionDisabled| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconProjectionDisabled.png
+   :width: {width}
+.. |mIconProjectionEnabled| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconProjectionEnabled.png
+   :width: {width}
+.. |mIconProjectionProblem| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconProjectionProblem.png
+   :width: {width}
+.. |mIconProperties| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconProperties.png
+   :width: {width}
+.. |mIconPyramid| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconPyramid.png
+   :width: {width}
+.. |mIconPythonFile| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconPythonFile.png
+   :width: {width}
+.. |mIconQgsProjectFile| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconQgsProjectFile.png
+   :width: {width}
+.. |mIconQptFile| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconQptFile.png
+   :width: {width}
+.. |mIconRaster| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconRaster.png
+   :width: {width}
+.. |mIconRasterGroup| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconRasterGroup.png
+   :width: {width}
+.. |mIconRasterLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconRasterLayer.png
+   :width: {width}
+.. |mIconRasterLink| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconRasterLink.png
+   :width: {width}
+.. |mIconRenderingDisabled| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconRenderingDisabled.png
+   :width: {width}
+.. |mIconRenderingEnabled| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconRenderingEnabled.png
+   :width: {width}
+.. |mIconReport| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconReport.png
+   :width: {width}
+.. |mIconSelectAdd| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconSelectAdd.png
+   :width: {width}
+.. |mIconSelectIntersect| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconSelectIntersect.png
+   :width: {width}
+.. |mIconSelectRemove| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconSelectRemove.png
+   :width: {width}
+.. |mIconSelected| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconSelected.png
+   :width: {width}
+.. |mIconSnapping| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconSnapping.png
+   :width: {width}
+.. |mIconSnappingActiveLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconSnappingActiveLayer.png
+   :width: {width}
+.. |mIconSnappingAdvanced| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconSnappingAdvanced.png
+   :width: {width}
+.. |mIconSnappingAllLayers| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconSnappingAllLayers.png
+   :width: {width}
+.. |mIconSnappingIntersection| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconSnappingIntersection.png
+   :width: {width}
+.. |mIconSnappingSegment| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconSnappingSegment.png
+   :width: {width}
+.. |mIconSnappingVertex| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconSnappingVertex.png
+   :width: {width}
+.. |mIconSnappingVertexAndSegment| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconSnappingVertexAndSegment.png
+   :width: {width}
+.. |mIconSpatialite| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconSpatialite.png
+   :width: {width}
+.. |mIconStopRendering| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconStopRendering.png
+   :width: {width}
+.. |mIconSuccess| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconSuccess.png
+   :width: {width}
+.. |mIconSymbology| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconSymbology.png
+   :width: {width}
+.. |mIconTableLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconTableLayer.png
+   :width: {width}
+.. |mIconTimerContinue| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconTimerContinue.png
+   :width: {width}
+.. |mIconTimerPause| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconTimerPause.png
+   :width: {width}
+.. |mIconTopologicalEditing| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconTopologicalEditing.png
+   :width: {width}
+.. |mIconTreeView| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconTreeView.png
+   :width: {width}
+.. |mIconUnknownLayerType| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconUnknownLayerType.png
+   :width: {width}
+.. |mIconVector| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconVector.png
+   :width: {width}
+.. |mIconVirtualLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconVirtualLayer.png
+   :width: {width}
+.. |mIconWaitingForLayerType| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconWaitingForLayerType.png
+   :width: {width}
+.. |mIconWarn| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconWarn.png
+   :width: {width}
+.. |mIconWarning| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconWarning.png
+   :width: {width}
+.. |mIconWcs| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconWcs.png
+   :width: {width}
+.. |mIconWfs| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconWfs.png
+   :width: {width}
+.. |mIconWms| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconWms.png
+   :width: {width}
+.. |mIconZip| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconZip.png
+   :width: {width}
+.. |mIconZoom| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIconZoom.png
+   :width: {width}
+.. |mIndicatorBadLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIndicatorBadLayer.png
+   :width: {width}
+.. |mIndicatorEmbedded| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIndicatorEmbedded.png
+   :width: {width}
+.. |mIndicatorFilter| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIndicatorFilter.png
+   :width: {width}
+.. |mIndicatorMemory| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIndicatorMemory.png
+   :width: {width}
+.. |mIndicatorNonRemovable| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mIndicatorNonRemovable.png
+   :width: {width}
+.. |mLayoutItem| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mLayoutItem.png
+   :width: {width}
+.. |mLayoutItem3DMap| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mLayoutItem3DMap.png
+   :width: {width}
+.. |mLayoutItemHtml| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mLayoutItemHtml.png
+   :width: {width}
+.. |mLayoutItemLabel| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mLayoutItemLabel.png
+   :width: {width}
+.. |mLayoutItemLegend| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mLayoutItemLegend.png
+   :width: {width}
+.. |mLayoutItemMap| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mLayoutItemMap.png
+   :width: {width}
+.. |mLayoutItemPicture| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mLayoutItemPicture.png
+   :width: {width}
+.. |mLayoutItemPolygon| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mLayoutItemPolygon.png
+   :width: {width}
+.. |mLayoutItemPolyline| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mLayoutItemPolyline.png
+   :width: {width}
+.. |mLayoutItemScaleBar| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mLayoutItemScaleBar.png
+   :width: {width}
+.. |mLayoutItemShapeEllipse| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mLayoutItemShapeEllipse.png
+   :width: {width}
+.. |mLayoutItemShapeRectangle| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mLayoutItemShapeRectangle.png
+   :width: {width}
+.. |mLayoutItemShapeTriangle| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mLayoutItemShapeTriangle.png
+   :width: {width}
+.. |mLayoutItemTable| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mLayoutItemTable.png
+   :width: {width}
+.. |mMapserverExport| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mMapserverExport.png
+   :width: {width}
+.. |mMessageLog| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mMessageLog.png
+   :width: {width}
+.. |mMessageLogRead| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mMessageLogRead.png
+   :width: {width}
+.. |mSourceFields| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mSourceFields.png
+   :width: {width}
+.. |mTaskCancel| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mTaskCancel.png
+   :width: {width}
+.. |mTaskComplete| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mTaskComplete.png
+   :width: {width}
+.. |mTaskOnHold| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mTaskOnHold.png
+   :width: {width}
+.. |mTaskQueued| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mTaskQueued.png
+   :width: {width}
+.. |mTaskRunning| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mTaskRunning.png
+   :width: {width}
+.. |mTaskTerminated| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mTaskTerminated.png
+   :width: {width}
+.. |multieditChangedValues| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}multieditChangedValues.png
+   :width: {width}
+.. |multieditMixedValues| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}multieditMixedValues.png
+   :width: {width}
+.. |multieditSameValues| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}multieditSameValues.png
+   :width: {width}
+.. |north_arrow| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}north_arrow.png
+   :width: {width}
+.. |pie-chart| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}pie-chart.png
+   :width: {width}
+.. |pin| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}pin.png
+   :width: {width}
+.. |plugin| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}plugin.png
+   :width: {width}
+.. |pluginDeprecated| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}pluginDeprecated.png
+   :width: {width}
+.. |pluginExperimental| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}pluginExperimental.png
+   :width: {width}
+.. |pluginNew| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}pluginNew.png
+   :width: {width}
+.. |pluginUpgrade| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}pluginUpgrade.png
+   :width: {width}
+.. |processingAlgorithm| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}processingAlgorithm.png
+   :width: {width}
+.. |processingModel| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}processingModel.png
+   :width: {width}
+.. |processingResult| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}processingResult.png
+   :width: {width}
+.. |processingScript| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}processingScript.png
+   :width: {width}
+.. |providerGdal| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}providerGdal.png
+   :width: {width}
+.. |providerGrass| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}providerGrass.png
+   :width: {width}
+.. |providerQgis| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}providerQgis.png
+   :width: {width}
+.. |providerSaga| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}providerSaga.png
+   :width: {width}
+.. |relation| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}relation.png
+   :width: {width}
+.. |renderer25dSymbol| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}renderer25dSymbol.png
+   :width: {width}
+.. |rendererCategorizedSymbol| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}rendererCategorizedSymbol.png
+   :width: {width}
+.. |rendererGraduatedSymbol| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}rendererGraduatedSymbol.png
+   :width: {width}
+.. |rendererGrassSymbol| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}rendererGrassSymbol.png
+   :width: {width}
+.. |rendererHeatmapSymbol| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}rendererHeatmapSymbol.png
+   :width: {width}
+.. |rendererInvertedSymbol| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}rendererInvertedSymbol.png
+   :width: {width}
+.. |rendererNullSymbol| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}rendererNullSymbol.png
+   :width: {width}
+.. |rendererPointClusterSymbol| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}rendererPointClusterSymbol.png
+   :width: {width}
+.. |rendererPointDisplacementSymbol| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}rendererPointDisplacementSymbol.png
+   :width: {width}
+.. |rendererRuleBasedSymbol| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}rendererRuleBasedSymbol.png
+   :width: {width}
+.. |rendererSingleSymbol| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}rendererSingleSymbol.png
+   :width: {width}
+.. |repositoryConnected| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}repositoryConnected.png
+   :width: {width}
+.. |repositoryDisabled| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}repositoryDisabled.png
+   :width: {width}
+.. |repositoryUnavailable| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}repositoryUnavailable.png
+   :width: {width}
+.. |scale_bar| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}scale_bar.png
+   :width: {width}
+.. |search| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}search.png
+   :width: {width}
+.. |selectTools| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}selectTools.png
+   :width: {width}
+.. |sort| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}sort.png
+   :width: {width}
+.. |stars_empty| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}stars_empty.png
+   :width: {width}
+.. |stars_full| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}stars_full.png
+   :width: {width}
+.. |symbologyAdd| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}symbologyAdd.png
+   :width: {width}
+.. |symbologyDown| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}symbologyDown.png
+   :width: {width}
+.. |symbologyEdit| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}symbologyEdit.png
+   :width: {width}
+.. |symbologyRemove| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}symbologyRemove.png
+   :width: {width}
+.. |symbologyUp| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}symbologyUp.png
+   :width: {width}
+.. |sync_views| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}sync_views.png
+   :width: {width}
+.. |text| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}text.png
+   :width: {width}
+.. |tracking| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}tracking.png
+   :width: {width}
+.. |transformed| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}transformed.png
+   :width: {width}
+.. |transp-background_8x8| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}transp-background_8x8.png
+   :width: {width}
+.. |unlocked| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}unlocked.png
+   :width: {width}
+.. |unlockedGray| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}unlockedGray.png
+   :width: {width}
+.. |user| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}user.png
+   :width: {width}
+.. |vector_grid| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}vector_grid.png
+   :width: {width}
+.. |zoomMaster| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}zoomMaster.png
+   :width: {width}
 """.format(path=os.path.dirname(os.path.abspath(__file__)), sep=os.path.sep, width='1.5em')
 
 ### GRASS icons
