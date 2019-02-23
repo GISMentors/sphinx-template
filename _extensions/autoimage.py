@@ -88,8 +88,8 @@ class Autoimage(Figure):
             else:
                 self.options['width'] = '{}%'.format(scale)
 
-            width = int(self.options.get('width-' + builder_name, -1))
-            if width > 0:
+            width = self.options.get('width-' + builder_name, -1)
+            if int(width) > 0:
                 self.options['width'] = width
         else:
             width = self.options.get('width', None)
