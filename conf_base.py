@@ -1603,6 +1603,14 @@ rst_prolog += """
    :width: {width}
 .. |transparency| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}transparency.png
    :width: {width}
+.. |selectstring| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}selectstring.png
+   :width: 2.5em
+.. |checkbox| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}checkbox.png
+   :width: {{width}}
+.. |checkbox_unchecked| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}/checkbox_unchecked.png
+   :width: {{width}}
+.. |selectnumber| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}/selectnumber.png
+   :width: {{width}}
 """.format(path=os.path.dirname(os.path.abspath(__file__)), sep=os.path.sep, width='1.5em')
 
 ### GRASS icons
