@@ -1511,6 +1511,98 @@ rst_prolog += """
    :width: {width}
 .. |mAlgorithmVoronoi| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mAlgorithmVoronoi.png
    :width: {width}
+.. |CRS| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}CRS.png
+   :width: {width}
+.. |action| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}action.png
+   :width: {width}
+.. |attributes| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}attributes.png
+   :width: {width}
+.. |colors| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}colors.png
+   :width: {width}
+.. |datadefined| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}datadefined.png
+   :width: {width}
+.. |diagram| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}diagram.png
+   :width: {width}
+.. |digitizing| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}digitizing.png
+   :width: {width}
+.. |display| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}display.png
+   :width: {width}
+.. |editmetadata| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}editmetadata.png
+   :width: {width}
+.. |gdal| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}gdal.png
+   :width: {width}
+.. |general| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}general.png
+   :width: {width}
+.. |histogram| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}histogram.png
+   :width: {width}
+.. |join| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}join.png
+   :width: {width}
+.. |labelbackground| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}labelbackground.png
+   :width: {width}
+.. |labelbuffer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}labelbuffer.png
+   :width: {width}
+.. |labelformatting| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}labelformatting.png
+   :width: {width}
+.. |labelplacement| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}labelplacement.png
+   :width: {width}
+.. |labels| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}labels.png
+   :width: {width}
+.. |labelshadow| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}labelshadow.png
+   :width: {width}
+.. |labeltext| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}labeltext.png
+   :width: {width}
+.. |locale| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}locale.png
+   :width: {width}
+.. |map_tools| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}map_tools.png
+   :width: {width}
+.. |meshcontours| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}meshcontours.png
+   :width: {width}
+.. |meshcontoursoff| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}meshcontoursoff.png
+   :width: {width}
+.. |meshframe| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}meshframe.png
+   :width: {width}
+.. |meshvectors| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}meshvectors.png
+   :width: {width}
+.. |meshvectorsoff| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}meshvectorsoff.png
+   :width: {width}
+.. |metadata| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}metadata.png
+   :width: {width}
+.. |network_and_proxy| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}network_and_proxy.png
+   :width: {width}
+.. |overlay| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}overlay.png
+   :width: {width}
+.. |plugin-incompatible| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}plugin-incompatible.png
+   :width: {width}
+.. |plugin-install_from_zip| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}plugin-install_from_zip.png
+   :width: {width}
+.. |plugin-installed| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}plugin-installed.png
+   :width: {width}
+.. |plugin-new| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}plugin-new.png
+   :width: {width}
+.. |plugin-upgrade| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}plugin-upgrade.png
+   :width: {width}
+.. |plugin| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}plugin.png
+   :width: {width}
+.. |plugins| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}plugins.png
+   :width: {width}
+.. |pyramids| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}pyramids.png
+   :width: {width}
+.. |render| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}render.png
+   :width: {width}
+.. |rendering| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}rendering.png
+   :width: {width}
+.. |settings| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}settings.png
+   :width: {width}
+.. |spacer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}spacer.png
+   :width: {width}
+.. |stylepreset| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}stylepreset.png
+   :width: {width}
+.. |symbology| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}symbology.png
+   :width: {width}
+.. |system| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}system.png
+   :width: {width}
+.. |transparency| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}transparency.png
+   :width: {width}
 """.format(path=os.path.dirname(os.path.abspath(__file__)), sep=os.path.sep, width='1.5em')
 
 ### GRASS icons
