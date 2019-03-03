@@ -395,6 +395,8 @@ rst_prolog += """
    :width: {width}
 .. |mActionAddDelimitedTextLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddDelimitedTextLayer.png
    :width: {width}
+.. |mActionAddGCPPoint| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddGCPPoint.png 
+   :width: {width}
 .. |mActionAddGPSLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddGPSLayer.png
    :width: {width}
 .. |mActionAddGeoPackageLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionAddGeoPackageLayer.png
@@ -542,6 +544,8 @@ rst_prolog += """
 .. |mActionDecreaseFont| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDecreaseFont.png
    :width: {width}
 .. |mActionDeleteAttribute| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDeleteAttribute.png
+   :width: {width}
+.. |mActionDeleteGCPPoint| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDeleteGCPPoint.png
    :width: {width}
 .. |mActionDeletePart| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionDeletePart.png
    :width: {width}
@@ -739,6 +743,8 @@ rst_prolog += """
    :width: {width}
 .. |mActionMoveFeaturePoint| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMoveFeaturePoint.png
    :width: {width}
+.. |mActionMoveGCPPoint| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMoveGCPPoint.png 
+   :width: {width}
 .. |mActionMoveItemContent| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMoveItemContent.png
    :width: {width}
 .. |mActionMoveItemsToBottom| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMoveItemsToBottom.png
@@ -931,6 +937,8 @@ rst_prolog += """
    :width: {width}
 .. |mActionStart| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionStart.png
    :width: {width}
+.. |mActionStartGeoref| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionStartGeoref.png 
+   :width: {width}
 .. |mActionStyleManager| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionStyleManager.png
    :width: {width}
 .. |mActionSum| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSum.png
@@ -946,6 +954,8 @@ rst_prolog += """
 .. |mActionTouch2| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionTouch2.png
    :width: {width}
 .. |mActionTracing| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionTracing.png
+   :width: {width}
+.. |mActionTransformSettings| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionTransformSettings.png
    :width: {width}
 .. |mActionUndo| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionUndo.png
    :width: {width}
