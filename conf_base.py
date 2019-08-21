@@ -1543,8 +1543,6 @@ rst_prolog += """
    :width: {width}
 .. |general| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}general.png
    :width: {width}
-.. |histogram| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}histogram.png
-   :width: {width}
 .. |join| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}join.png
    :width: {width}
 .. |labelbackground| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}labelbackground.png
@@ -1590,8 +1588,6 @@ rst_prolog += """
 .. |plugin-new| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}plugin-new.png
    :width: {width}
 .. |plugin-upgrade| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}plugin-upgrade.png
-   :width: {width}
-.. |plugin| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}plugin.png
    :width: {width}
 .. |plugins| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}plugins.png
    :width: {width}
