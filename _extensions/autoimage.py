@@ -49,6 +49,7 @@ class Autoimage(Figure):
                    'height': directives.length_or_unitless,
                    'width': directives.length_or_percentage_or_unitless,
                    'width-latex': directives.length_or_percentage_or_unitless,
+                   'alt': directives.images.fully_normalize_name,
                    }
 
     def run(self):
