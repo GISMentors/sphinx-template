@@ -1355,6 +1355,12 @@ rst_prolog += """
    :width: {width}
 .. |pluginUpgrade| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}pluginUpgrade.png
    :width: {width}
+.. |point| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}point.png
+   :width: {width}
+.. |polygon| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}polygon.png
+   :width: {width}
+.. |polyline| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}polyline.png
+   :width: {width}
 .. |processingAlgorithm| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}processingAlgorithm.png
    :width: {width}
 .. |processingModel| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}processingModel.png
@@ -1394,6 +1400,8 @@ rst_prolog += """
 .. |rendererRuleBasedSymbol| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}rendererRuleBasedSymbol.png
    :width: {width}
 .. |rendererSingleSymbol| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}rendererSingleSymbol.png
+   :width: {width}
+.. |rendering_bar| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}rendering_bar.png
    :width: {width}
 .. |repositoryConnected| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}repositoryConnected.png
    :width: {width}
