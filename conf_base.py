@@ -1611,6 +1611,10 @@ rst_prolog += """
    :width: {width}
 .. |pyramids| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}pyramids.png
    :width: {width}
+.. |radiobuttonon| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}radiobuttonon.png
+   :width: {width}
+.. |radiobuttonoff| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}radiobuttonoff.png
+   :width: {width}
 .. |render| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}render.png
    :width: {width}
 .. |rendering| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}rendering.png
@@ -1634,6 +1638,12 @@ rst_prolog += """
 .. |checkbox_unchecked| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}checkbox_unchecked.png
    :width: {width}
 .. |selectnumber| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}selectnumber.png
+   :width: {width}
+.. |gps_importer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}gps_importer.png
+   :width: {width}
+.. |create_gpx| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}create_gpx.png
+   :width: {width}
+.. |import_gpx| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}import_gpx.png
    :width: {width}
 """.format(path=os.path.dirname(os.path.abspath(__file__)), sep=os.path.sep, width='1.5em')
 
