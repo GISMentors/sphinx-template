@@ -1339,6 +1339,8 @@ rst_prolog += """
    :width: {width}
 .. |multieditSameValues| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}multieditSameValues.png
    :width: {width}
+.. |organiseColumns| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}organiseColumns.png
+   :width: {width}
 .. |north_arrow| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}north_arrow.png
    :width: {width}
 .. |pie-chart| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}pie-chart.png
