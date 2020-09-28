@@ -901,6 +901,10 @@ rst_prolog += """
    :width: {width}
 .. |mActionSetProjection| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSetProjection.png
    :width: {width}
+.. |mActionSetToCanvasExtent| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSetToCanvasExtent.png
+   :width: {width}
+.. |mActionSetToCanvasScale| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSetToCanvasScale.png
+   :width: {width}
 .. |mActionSharing| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSharing.png
    :width: {width}
 .. |mActionSharingExport| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionSharingExport.png
@@ -970,6 +974,10 @@ rst_prolog += """
 .. |mActionVertexTool| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionVertexTool.png
    :width: {width}
 .. |mActionVertexToolActiveLayer| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionVertexToolActiveLayer.png
+   :width: {width}
+.. |mActionViewExtentInCanvas| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionViewExtentInCanvas.png
+   :width: {width}
+.. |mActionViewScaleInCanvas| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionViewScaleInCanvas.png
    :width: {width}
 .. |mActionWhatsThis| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionWhatsThis.png
    :width: {width}
