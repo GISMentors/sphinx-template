@@ -1639,306 +1639,322 @@ rst_prolog += """
 
 ### GRASS icons
 rst_prolog += """
-.. |grass-boundary-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}boundary-create.png
-   :width: {width}
-.. |grass-execute| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}execute.png
-   :width: {width}
-.. |grass-map-export| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}map-export.png
-   :width: {width}
-.. |grass-undo| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}undo.png
-   :width: {width}
-.. |grass-polygon-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}polygon-create.png
-   :width: {width}
-.. |grass-line-edit| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}line-edit.png
-   :width: {width}
-.. |grass-layer-raster-profile| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-raster-profile.png
-   :width: {width}
-.. |grass-point-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}point-add.png
-   :width: {width}
-.. |grass-script-save| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}script-save.png
-   :width: {width}
-.. |grass-module-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}module-add.png
-   :width: {width}
-.. |grass-raster3d| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}raster3d.png
-   :width: {width}
-.. |grass-python| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}python.png
-   :width: {width}
-.. |grass-layer-opacity| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-opacity.png
-   :width: {width}
-.. |grass-area-measure| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}area-measure.png
-   :width: {width}
-.. |grass-table-manager| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}table-manager.png
-   :width: {width}
-.. |grass-attributes-display| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}attributes-display.png
-   :width: {width}
-.. |grass-cats-display| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}cats-display.png
-   :width: {width}
-.. |grass-layer-rgb-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-rgb-add.png
-   :width: {width}
-.. |grass-layer-vector-more| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-vector-more.png
-   :width: {width}
-.. |grass-table| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}table.png
-   :width: {width}
-.. |grass-raster-calculator| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}raster-calculator.png
-   :width: {width}
-.. |grass-gcp-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}gcp-add.png
-   :width: {width}
-.. |grass-zoom-out| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}zoom-out.png
-   :width: {width}
-.. |grass-relation-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}relation-create.png
-   :width: {width}
-.. |grass-layer-group-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-group-add.png
-   :width: {width}
-.. |grass-gcp-rms| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}gcp-rms.png
-   :width: {width}
-.. |grass-overlay-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}overlay-add.png
-   :width: {width}
-.. |grass-3d-help| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}3d-help.png
-   :width: {width}
-.. |grass-flythrough| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}flythrough.png
-   :width: {width}
-.. |grass-polygon-delete| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}polygon-delete.png
-   :width: {width}
-.. |grass-layer-shaded-relief-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-shaded-relief-add.png
-   :width: {width}
-.. |grass-vertex-delete| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}vertex-delete.png
-   :width: {width}
-.. |grass-layer-label-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-label-add.png
-   :width: {width}
-.. |grass-gcp-remove| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}gcp-remove.png
-   :width: {width}
-.. |grass-layer-import| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-import.png
-   :width: {width}
-.. |grass-measure-length| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}measure-length.png
-   :width: {width}
-.. |grass-move| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}move.png
-   :width: {width}
-.. |grass-layer-info| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-info.png
-   :width: {width}
-.. |grass-redraw| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}redraw.png
-   :width: {width}
-.. |grass-scalebar-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}scalebar-add.png
-   :width: {width}
-.. |grass-layer-open| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-open.png
-   :width: {width}
-.. |grass-raster| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}raster.png
-   :width: {width}
-.. |grass-polygon| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}polygon.png
-   :width: {width}
-.. |grass-layer-bottom| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-bottom.png
-   :width: {width}
-.. |grass-gcp-save| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}gcp-save.png
-   :width: {width}
-.. |grass-zoom-region| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}zoom-region.png
-   :width: {width}
-.. |grass-vertex-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}vertex-create.png
-   :width: {width}
-.. |grass-page-settings| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}page-settings.png
-   :width: {width}
-.. |grass-edit| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}edit.png
-   :width: {width}
-.. |grass-layer-cell-cats-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-cell-cats-add.png
-   :width: {width}
-.. |grass-zoom-last| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}zoom-last.png
-   :width: {width}
-.. |grass-legend-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}legend-add.png
-   :width: {width}
-.. |grass-check| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}check.png
-   :width: {width}
-.. |grass-rgb| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}rgb.png
-   :width: {width}
-.. |grass-print| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}print.png
-   :width: {width}
-.. |grass-raster-stats| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}raster-stats.png
-   :width: {width}
-.. |grass-layer-aspect-arrow-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-aspect-arrow-add.png
-   :width: {width}
-.. |grass-layer-wms-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-wms-add.png
-   :width: {width}
-.. |grass-tools| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}tools.png
-   :width: {width}
-.. |grass-select| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}select.png
-   :width: {width}
-.. |grass-font| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}font.png
-   :width: {width}
-.. |grass-options| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}options.png
-   :width: {width}
-.. |grass-player-stop| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}player-stop.png
-   :width: {width}
-.. |grass-monitor-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}monitor-create.png
-   :width: {width}
-.. |grass-layer-vector-chart-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-vector-chart-add.png
-   :width: {width}
-.. |grass-layer-more| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-more.png
-   :width: {width}
-.. |grass-reload| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}reload.png
-   :width: {width}
-.. |grass-layer-raster3d-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-raster3d-add.png
-   :width: {width}
-.. |grass-cell-cats| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}cell-cats.png
-   :width: {width}
-.. |grass-point-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}point-create.png
-   :width: {width}
-.. |grass-layer-redraw| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-redraw.png
-   :width: {width}
-.. |grass-layer-raster-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-raster-add.png
-   :width: {width}
-.. |grass-map-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}map-add.png
-   :width: {width}
-.. |grass-loop-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}loop-add.png
-   :width: {width}
-.. |grass-settings| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}settings.png
-   :width: {width}
-.. |grass-erase| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}erase.png
-   :width: {width}
-.. |grass-aspect-arrow| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}aspect-arrow.png
-   :width: {width}
-.. |grass-georectify| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}georectify.png
-   :width: {width}
-.. |grass-layer-his-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-his-add.png
-   :width: {width}
-.. |grass-pdf-export| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}pdf-export.png
-   :width: {width}
-.. |grass-unlocked| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}unlocked.png
-   :width: {width}
-.. |grass-shaded-relief| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}shaded-relief.png
-   :width: {width}
-.. |grass-pointer| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}pointer.png
-   :width: {width}
-.. |grass-data-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}data-add.png
-   :width: {width}
-.. |grass-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}create.png
-   :width: {width}
-.. |grass-layer-vector-thematic-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-vector-thematic-add.png
-   :width: {width}
-.. |grass-redo| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}redo.png
-   :width: {width}
-.. |grass-vector-thematic| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}vector-thematic.png
-   :width: {width}
-.. |grass-image-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}image-add.png
-   :width: {width}
-.. |grass-centroid-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}centroid-create.png
-   :width: {width}
-.. |grass-quit| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}quit.png
-   :width: {width}
-.. |grass-layer-raster-histogram| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-raster-histogram.png
-   :width: {width}
-.. |grass-text-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}text-add.png
-   :width: {width}
-.. |grass-vector-chart| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}vector-chart.png
-   :width: {width}
-.. |grass-info| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}info.png
-   :width: {width}
-.. |grass-region| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}region.png
-   :width: {width}
-.. |grass-line-delete| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}line-delete.png
-   :width: {width}
-.. |grass-map-settings| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}map-settings.png
-   :width: {width}
-.. |grass-layer-command-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-command-add.png
-   :width: {width}
-.. |grass-layer-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-add.png
-   :width: {width}
-.. |grass-gcp-delete| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}gcp-delete.png
-   :width: {width}
-.. |grass-label-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}label-add.png
-   :width: {width}
-.. |grass-print-compose| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}print-compose.png
-   :width: {width}
-.. |grass-cats-copy| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}cats-copy.png
-   :width: {width}
-.. |grass-python-export| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}python-export.png
-   :width: {width}
-.. |grass-stats| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}stats.png
-   :width: {width}
-.. |grass-line-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}line-create.png
-   :width: {width}
-.. |grass-show| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}show.png
-   :width: {width}
-.. |grass-gcp-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}gcp-create.png
-   :width: {width}
-.. |grass-map-info| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}map-info.png
-   :width: {width}
-.. |grass-modeler-main| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}modeler-main.png
-   :width: {width}
 .. |grass-locked| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}locked.png
-   :width: {width}
-.. |grass-layer-up| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-up.png
-   :width: {width}
-.. |grass-save| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}save.png
-   :width: {width}
-.. |grass-image-export| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}image-export.png
-   :width: {width}
-.. |grass-modeler-variables| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}modeler-variables.png
-   :width: {width}
-.. |grass-vector| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}vector.png
-   :width: {width}
-.. |grass-line-split| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}line-split.png
-   :width: {width}
-.. |grass-3d-rotate| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}3d-rotate.png
-   :width: {width}
-.. |grass-label| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}label.png
-   :width: {width}
-.. |grass-layer-raster-more| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-raster-more.png
-   :width: {width}
-.. |grass-script-load| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}script-load.png
-   :width: {width}
-.. |grass-wms| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}wms.png
-   :width: {width}
-.. |grass-layer-grid-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-grid-add.png
-   :width: {width}
-.. |grass-zoom-extent| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}zoom-extent.png
-   :width: {width}
-.. |grass-his| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}his.png
-   :width: {width}
-.. |grass-player-back| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}player-back.png
-   :width: {width}
-.. |grass-player-repeat-back-forward| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}player-repeat-back-forward.png
-   :width: {width}
-.. |grass-vector-tools| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}vector-tools.png
-   :width: {width}
-.. |grass-north-arrow-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}north-arrow-add.png
-   :width: {width}
-.. |grass-layer-vector-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-vector-add.png
-   :width: {width}
-.. |grass-zoom-in| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}zoom-in.png
-   :width: {width}
-.. |grass-help| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}help.png
-   :width: {width}
-.. |grass-shortest-distance| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}shortest-distance.png
-   :width: {width}
-.. |grass-layer-remove| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-remove.png
-   :width: {width}
-.. |grass-rectangle-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}rectangle-add.png
-   :width: {width}
-.. |grass-open| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}open.png
-   :width: {width}
-.. |grass-zoom-layer| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}zoom-layer.png
    :width: {width}
 .. |grass-zoom-more| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}zoom-more.png
    :width: {width}
-.. |grass-mapset-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}mapset-add.png
+.. |grass-layer-info| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-info.png
    :width: {width}
-.. |grass-line-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}line-add.png
+.. |grass-save| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}save.png
    :width: {width}
-.. |grass-vertex-move| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}vertex-move.png
-   :width: {width}
-.. |grass-layer-down| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-down.png
-   :width: {width}
-.. |grass-3d-settings| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}3d-settings.png
-   :width: {width}
-.. |grass-line-move| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}line-move.png
+.. |grass-his| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}his.png
    :width: {width}
 .. |grass-player-pause| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}player-pause.png
    :width: {width}
-.. |grass-pan| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}pan.png
+.. |grass-gcp-save| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}gcp-save.png
    :width: {width}
-.. |grass-layer-export| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-export.png
+.. |grass-font| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}font.png
    :width: {width}
-.. |grass-layer-raster-analyze| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-raster-analyze.png
+.. |grass-player-back| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}player-back.png
+   :width: {width}
+.. |grass-layer-vector-more| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-vector-more.png
+   :width: {width}
+.. |grass-gcp-rms| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}gcp-rms.png
+   :width: {width}
+.. |grass-vector-chart| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}vector-chart.png
+   :width: {width}
+.. |grass-redo| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}redo.png
+   :width: {width}
+.. |grass-label| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}label.png
+   :width: {width}
+.. |grass-monitor-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}monitor-create.png
+   :width: {width}
+.. |grass-zoom-last| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}zoom-last.png
+   :width: {width}
+.. |grass-raster-calculator| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}raster-calculator.png
+   :width: {width}
+.. |grass-layer-edit| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-edit.png
+   :width: {width}
+.. |grass-reload| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}reload.png
+   :width: {width}
+.. |grass-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}create.png
+   :width: {width}
+.. |grass-print-compose| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}print-compose.png
+   :width: {width}
+.. |grass-region| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}region.png
+   :width: {width}
+.. |grass-point-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}point-create.png
+   :width: {width}
+.. |grass-modeler-variables| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}modeler-variables.png
+   :width: {width}
+.. |grass-legend-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}legend-add.png
+   :width: {width}
+.. |grass-mapset| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}mapset.png
+   :width: {width}
+.. |grass-undo| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}undo.png
+   :width: {width}
+.. |grass-move| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}move.png
+   :width: {width}
+.. |grass-mapset-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}mapset-add.png
+   :width: {width}
+.. |grass-label-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}label-add.png
+   :width: {width}
+.. |grass-centroid-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}centroid-create.png
+   :width: {width}
+.. |grass-layer-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-add.png
+   :width: {width}
+.. |grass-data-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}data-add.png
+   :width: {width}
+.. |grass-loop-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}loop-add.png
+   :width: {width}
+.. |grass-unlocked| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}unlocked.png
+   :width: {width}
+.. |grass-layer-wms-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-wms-add.png
+   :width: {width}
+.. |grass-vertex-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}vertex-create.png
+   :width: {width}
+.. |grass-line-split| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}line-split.png
+   :width: {width}
+.. |grass-north-arrow-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}north-arrow-add.png
+   :width: {width}
+.. |grass-layer-aspect-arrow-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-aspect-arrow-add.png
+   :width: {width}
+.. |grass-text-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}text-add.png
+   :width: {width}
+.. |grass-line-move| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}line-move.png
+   :width: {width}
+.. |grass-flythrough| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}flythrough.png
+   :width: {width}
+.. |grass-pointer| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}pointer.png
+   :width: {width}
+.. |grass-point-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}point-add.png
+   :width: {width}
+.. |grass-player-repeat-back-forward| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}player-repeat-back-forward.png
+   :width: {width}
+.. |grass-vector| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}vector.png
+   :width: {width}
+.. |grass-attributes-display| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}attributes-display.png
+   :width: {width}
+.. |grass-layer-raster-profile| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-raster-profile.png
+   :width: {width}
+.. |grass-python-export| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}python-export.png
+   :width: {width}
+.. |grass-layer-bottom| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-bottom.png
+   :width: {width}
+.. |grass-gcp-remove| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}gcp-remove.png
+   :width: {width}
+.. |grass-layer-group-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-group-add.png
+   :width: {width}
+.. |grass-raster| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}raster.png
+   :width: {width}
+.. |grass-location-download| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}location-download.png
+   :width: {width}
+.. |grass-tools| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}tools.png
+   :width: {width}
+.. |grass-layer-opacity| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-opacity.png
+   :width: {width}
+.. |grass-raster-import| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}raster-import.png
    :width: {width}
 .. |grass-ps-export| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}ps-export.png
    :width: {width}
-.. |grass-layer-edit| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-edit.png
+.. |grass-overlay-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}overlay-add.png
+   :width: {width}
+.. |grass-gcp-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}gcp-add.png
+   :width: {width}
+.. |grass-rectangle-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}rectangle-add.png
+   :width: {width}
+.. |grass-line-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}line-create.png
+   :width: {width}
+.. |grass-vector-tools| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}vector-tools.png
+   :width: {width}
+.. |grass-measure-length| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}measure-length.png
+   :width: {width}
+.. |grass-georectify| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}georectify.png
+   :width: {width}
+.. |grass-script-load| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}script-load.png
+   :width: {width}
+.. |grass-location| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}location.png
+   :width: {width}
+.. |grass-layer-raster-more| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-raster-more.png
+   :width: {width}
+.. |grass-redraw| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}redraw.png
+   :width: {width}
+.. |grass-layer-down| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-down.png
+   :width: {width}
+.. |grass-layer-shaded-relief-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-shaded-relief-add.png
+   :width: {width}
+.. |grass-shaded-relief| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}shaded-relief.png
+   :width: {width}
+.. |grass-script-save| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}script-save.png
+   :width: {width}
+.. |grass-grassdb| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}grassdb.png
+   :width: {width}
+.. |grass-help| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}help.png
+   :width: {width}
+.. |grass-layer-vector-thematic-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-vector-thematic-add.png
+   :width: {width}
+.. |grass-stats| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}stats.png
+   :width: {width}
+.. |grass-settings| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}settings.png
+   :width: {width}
+.. |grass-zoom-out| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}zoom-out.png
+   :width: {width}
+.. |grass-aspect-arrow| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}aspect-arrow.png
+   :width: {width}
+.. |grass-check| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}check.png
+   :width: {width}
+.. |grass-line-delete| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}line-delete.png
+   :width: {width}
+.. |grass-select| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}select.png
+   :width: {width}
+.. |grass-line-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}line-add.png
+   :width: {width}
+.. |grass-print| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}print.png
+   :width: {width}
+.. |grass-line-edit| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}line-edit.png
+   :width: {width}
+.. |grass-info| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}info.png
+   :width: {width}
+.. |grass-zoom-layer| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}zoom-layer.png
+   :width: {width}
+.. |grass-zoom-extent| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}zoom-extent.png
+   :width: {width}
+.. |grass-gcp-delete| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}gcp-delete.png
+   :width: {width}
+.. |grass-grassdb-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}grassdb-add.png
+   :width: {width}
+.. |grass-layer-rgb-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-rgb-add.png
+   :width: {width}
+.. |grass-shortest-distance| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}shortest-distance.png
+   :width: {width}
+.. |grass-page-settings| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}page-settings.png
+   :width: {width}
+.. |grass-wms| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}wms.png
+   :width: {width}
+.. |grass-cats-copy| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}cats-copy.png
+   :width: {width}
+.. |grass-vector-import| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}vector-import.png
+   :width: {width}
+.. |grass-layer-command-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-command-add.png
+   :width: {width}
+.. |grass-polygon| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}polygon.png
+   :width: {width}
+.. |grass-layer-cell-cats-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-cell-cats-add.png
+   :width: {width}
+.. |grass-scalebar-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}scalebar-add.png
+   :width: {width}
+.. |grass-3d-help| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}3d-help.png
+   :width: {width}
+.. |grass-location-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}location-add.png
+   :width: {width}
+.. |grass-layer-up| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-up.png
+   :width: {width}
+.. |grass-table-manager| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}table-manager.png
+   :width: {width}
+.. |grass-table| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}table.png
+   :width: {width}
+.. |grass-zoom-region| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}zoom-region.png
+   :width: {width}
+.. |grass-vertex-move| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}vertex-move.png
+   :width: {width}
+.. |grass-image-export| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}image-export.png
+   :width: {width}
+.. |grass-pan| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}pan.png
+   :width: {width}
+.. |grass-boundary-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}boundary-create.png
+   :width: {width}
+.. |grass-layer-raster3d-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-raster3d-add.png
+   :width: {width}
+.. |grass-layer-vector-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-vector-add.png
+   :width: {width}
+.. |grass-layer-remove| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-remove.png
+   :width: {width}
+.. |grass-layer-raster-histogram| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-raster-histogram.png
+   :width: {width}
+.. |grass-vector-thematic| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}vector-thematic.png
+   :width: {width}
+.. |grass-layer-import| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-import.png
+   :width: {width}
+.. |grass-map-settings| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}map-settings.png
+   :width: {width}
+.. |grass-layer-raster-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-raster-add.png
+   :width: {width}
+.. |grass-erase| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}erase.png
+   :width: {width}
+.. |grass-map-info| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}map-info.png
+   :width: {width}
+.. |grass-cell-cats| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}cell-cats.png
+   :width: {width}
+.. |grass-layer-more| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-more.png
+   :width: {width}
+.. |grass-area-measure| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}area-measure.png
+   :width: {width}
+.. |grass-3d-settings| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}3d-settings.png
+   :width: {width}
+.. |grass-layer-export| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-export.png
+   :width: {width}
+.. |grass-cats-display| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}cats-display.png
+   :width: {width}
+.. |grass-map-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}map-add.png
+   :width: {width}
+.. |grass-python| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}python.png
+   :width: {width}
+.. |grass-player-stop| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}player-stop.png
+   :width: {width}
+.. |grass-pdf-export| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}pdf-export.png
+   :width: {width}
+.. |grass-polygon-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}polygon-create.png
+   :width: {width}
+.. |grass-layer-vector-chart-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-vector-chart-add.png
+   :width: {width}
+.. |grass-gcp-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}gcp-create.png
+   :width: {width}
+.. |grass-layer-redraw| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-redraw.png
+   :width: {width}
+.. |grass-3d-rotate| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}3d-rotate.png
+   :width: {width}
+.. |grass-raster-stats| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}raster-stats.png
+   :width: {width}
+.. |grass-layer-label-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-label-add.png
+   :width: {width}
+.. |grass-vertex-delete| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}vertex-delete.png
+   :width: {width}
+.. |grass-raster3d| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}raster3d.png
+   :width: {width}
+.. |grass-module-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}module-add.png
+   :width: {width}
+.. |grass-edit| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}edit.png
+   :width: {width}
+.. |grass-layer-grid-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-grid-add.png
+   :width: {width}
+.. |grass-zoom-in| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}zoom-in.png
+   :width: {width}
+.. |grass-show| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}show.png
+   :width: {width}
+.. |grass-execute| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}execute.png
+   :width: {width}
+.. |grass-options| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}options.png
+   :width: {width}
+.. |grass-map-export| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}map-export.png
+   :width: {width}
+.. |grass-quit| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}quit.png
+   :width: {width}
+.. |grass-image-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}image-add.png
+   :width: {width}
+.. |grass-layer-open| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-open.png
+   :width: {width}
+.. |grass-layer-raster-analyze| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-raster-analyze.png
+   :width: {width}
+.. |grass-layer-his-add| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}layer-his-add.png
+   :width: {width}
+.. |grass-modeler-main| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}modeler-main.png
+   :width: {width}
+.. |grass-polygon-delete| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}polygon-delete.png
+   :width: {width}
+.. |grass-relation-create| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}relation-create.png
+   :width: {width}
+.. |grass-open| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}open.png
+   :width: {width}
+.. |grass-rgb| image:: {sep}{path}{sep}_static{sep}icons{sep}grass{sep}rgb.png
    :width: {width}
 """.format(path=os.path.dirname(os.path.abspath(__file__)), sep=os.path.sep, width='1.5em')

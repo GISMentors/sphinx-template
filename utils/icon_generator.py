@@ -1,10 +1,10 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import os
 import sys
 
 if len(sys.argv) < 3:
-    sys.exit("icons output")
+    sys.exit("icons_path output_file")
 
 path=sys.argv[1]
 output=sys.argv[2]
