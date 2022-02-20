@@ -519,7 +519,7 @@ img.tiny {
 }
 
 span.map {
-  font-family: "Brush Script MT", cursive;
+  font-family: monospace;
 }
 
 span.mapset {
