@@ -727,7 +727,7 @@ rst_prolog += """
    :width: {width}
 .. |mActionMeasureArea| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMeasureArea.png
    :width: {width}
-.. |mActionMeasureAtimuzh| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMeasureAtimuzh.png
+.. |mActionMeasureAzimuth| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMeasureAzimuth.png
    :width: {width}   
 .. |mActionMergeFeatureAttributes| image:: {sep}{path}{sep}_static{sep}icons{sep}qgis{sep}mActionMergeFeatureAttributes.png
    :width: {width}
