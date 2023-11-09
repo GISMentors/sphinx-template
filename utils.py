@@ -1,9 +1,14 @@
 # -- GISMentors subroutines --------------------------------------
 import datetime
 import locale
+import warnings
 
 def get_month_year(force_locale='en_US.UTF-8'):
-    locale.setlocale(locale.LC_ALL, force_locale)
+    try:
+        locale.setlocale(locale.LC_ALL, force_locale)
+    except locale.Error as e:
+        warnings.warn(f"{e}")
+        locale.setlocale(locale.LC_ALL)
     from calendar import month_name
     
     date = datetime.datetime.now()
