@@ -40,14 +40,14 @@ if version_info[0] <= 1 and version_info[1] < 6:
 else:
     numfig = True
 
-extlinks = {'grasscmd': ('http://grass.osgeo.org/grass83/manuals/%s.html', '%s'),
-            'grasscmd2': ('http://grass.osgeo.org/grass83/manuals/%s', '%s'),
-            'grasscmdaddons': ('http://grass.osgeo.org/grass83/manuals/addons/%s.html', '%s'),
-            'wikipedia': ('http://en.wikipedia.org/wiki/%s', '%s'),
-            'epsg' : ('http://epsg.io/%s', 'EPSG:%s'),
-            'pgiscmd': ('http://postgis.net/docs/%s.html', '%s'),
-            'pgiscmd2': ('http://postgis.net/docs/%s', '%s'),
-            'pgsqlcmd': ('http://www.postgresql.org/docs/current/static/%s.html', '%s'),
+extlinks = {'grasscmd': ('https://grass.osgeo.org/grass83/manuals/%s.html', '%s'),
+            'grasscmd2': ('https://grass.osgeo.org/grass83/manuals/%s', '%s'),
+            'grasscmdaddons': ('https://grass.osgeo.org/grass83/manuals/addons/%s.html', '%s'),
+            'wikipedia': ('https://en.wikipedia.org/wiki/%s', '%s'),
+            'epsg' : ('https://epsg.io/%s', 'EPSG:%s'),
+            'pgiscmd': ('https://postgis.net/docs/%s.html', '%s'),
+            'pgiscmd2': ('https://postgis.net/docs/%s', '%s'),
+            'pgsqlcmd': ('https://www.postgresql.org/docs/current/static/%s.html', '%s'),
             'skoleni' : ('https://gismentors.github.io/%s', '%s'),
             'grass-script' : ('https://grass.osgeo.org/grass83/manuals/libpython/script.html#script.%s', '%s'),
             'pygrass-gis' : ('https://grass.osgeo.org/grass83/manuals/libpython/pygrass.gis.html#pygrass.gis.%s', '%s'),
