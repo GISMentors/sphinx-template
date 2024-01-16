@@ -40,21 +40,21 @@ if version_info[0] <= 1 and version_info[1] < 6:
 else:
     numfig = True
 
-extlinks = {'grasscmd': ('http://grass.osgeo.org/grass80/manuals/%s.html', ''),
-            'grasscmd2': ('http://grass.osgeo.org/grass80/manuals/%s', ''),
-            'grasscmdaddons': ('http://grass.osgeo.org/grass80/manuals/addons/%s.html', ''),
-            'wikipedia': ('http://en.wikipedia.org/wiki/%s', ''),
-            'epsg' : ('http://epsg.io/%s', 'EPSG:'),
-            'pgiscmd': ('http://postgis.net/docs/%s.html', ''),
-            'pgiscmd2': ('http://postgis.net/docs/%s', ''),
-            'pgsqlcmd': ('http://www.postgresql.org/docs/current/static/%s.html', ''),
-            'skoleni' : ('https://gismentors.github.io/%s', ''),
-            'grass-script' : ('https://grass.osgeo.org/grass83/manuals/libpython/script.html#script.%s', ''),
-            'pygrass-gis' : ('https://grass.osgeo.org/grass83/manuals/libpython/pygrass.gis.html#pygrass.gis.%s', ''),
-            'pygrass-modules' : ('https://grass.osgeo.org/grass83/manuals/libpython/pygrass.modules.interface.html#pygrass.modules.interface.module.%s', ''),
-            'pygrass-vector' : ('https://grass.osgeo.org/grass83/manuals/libpython/pygrass.vector.html#pygrass.vector.%s', ''),
-            'pygrass-raster' : ('https://grass.osgeo.org/grass83/manuals/libpython/pygrass.raster.html#pygrass.raster.%s', ''),
-            'python3': ('https://docs.python.org/3/library/%s.html', ''),
+extlinks = {'grasscmd': ('http://grass.osgeo.org/grass83/manuals/%s.html', '%s'),
+            'grasscmd2': ('http://grass.osgeo.org/grass83/manuals/%s', '%s'),
+            'grasscmdaddons': ('http://grass.osgeo.org/grass83/manuals/addons/%s.html', '%s'),
+            'wikipedia': ('http://en.wikipedia.org/wiki/%s', '%s'),
+            'epsg' : ('http://epsg.io/%s', 'EPSG:%s'),
+            'pgiscmd': ('http://postgis.net/docs/%s.html', '%s'),
+            'pgiscmd2': ('http://postgis.net/docs/%s', '%s'),
+            'pgsqlcmd': ('http://www.postgresql.org/docs/current/static/%s.html', '%s'),
+            'skoleni' : ('https://gismentors.github.io/%s', '%s'),
+            'grass-script' : ('https://grass.osgeo.org/grass83/manuals/libpython/script.html#script.%s', '%s'),
+            'pygrass-gis' : ('https://grass.osgeo.org/grass83/manuals/libpython/pygrass.gis.html#pygrass.gis.%s', '%s'),
+            'pygrass-modules' : ('https://grass.osgeo.org/grass83/manuals/libpython/pygrass.modules.interface.html#pygrass.modules.interface.module.%s', '%s'),
+            'pygrass-vector' : ('https://grass.osgeo.org/grass83/manuals/libpython/pygrass.vector.html#pygrass.vector.%s', '%s'),
+            'pygrass-raster' : ('https://grass.osgeo.org/grass83/manuals/libpython/pygrass.raster.html#pygrass.raster.%s', '%s'),
+            'python3': ('https://docs.python.org/3/library/%s.html', '%s'),
             }
 
 # Add any paths that contain templates here, relative to this directory.
