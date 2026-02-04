@@ -40,20 +40,20 @@ if version_info[0] <= 1 and version_info[1] < 6:
 else:
     numfig = True
 
-extlinks = {'grasscmd': ('https://grass.osgeo.org/grass83/manuals/%s.html', '%s'),
-            'grasscmd2': ('https://grass.osgeo.org/grass83/manuals/%s', '%s'),
-            'grasscmdaddons': ('https://grass.osgeo.org/grass83/manuals/addons/%s.html', '%s'),
+extlinks = {'grasscmd': ('https://grass.osgeo.org/grass-stable/manuals/%s.html', '%s'),
+            'grasscmd2': ('https://grass.osgeo.org/grass-stable/manuals/%s', '%s'),
+            'grasscmdaddons': ('https://grass.osgeo.org/grass-stable/manuals/addons/%s.html', '%s'),
             'wikipedia': ('https://en.wikipedia.org/wiki/%s', '%s'),
             'epsg' : ('https://epsg.io/%s', 'EPSG:%s'),
             'pgiscmd': ('https://postgis.net/docs/%s.html', '%s'),
             'pgiscmd2': ('https://postgis.net/docs/%s', '%s'),
             'pgsqlcmd': ('https://www.postgresql.org/docs/current/static/%s.html', '%s'),
             'skoleni' : ('https://gismentors.github.io/%s', '%s'),
-            'grass-script' : ('https://grass.osgeo.org/grass83/manuals/libpython/script.html#script.%s', '%s'),
-            'pygrass-gis' : ('https://grass.osgeo.org/grass83/manuals/libpython/pygrass.gis.html#pygrass.gis.%s', '%s'),
-            'pygrass-modules' : ('https://grass.osgeo.org/grass83/manuals/libpython/pygrass.modules.interface.html#pygrass.modules.interface.module.%s', '%s'),
-            'pygrass-vector' : ('https://grass.osgeo.org/grass83/manuals/libpython/pygrass.vector.html#pygrass.vector.%s', '%s'),
-            'pygrass-raster' : ('https://grass.osgeo.org/grass83/manuals/libpython/pygrass.raster.html#pygrass.raster.%s', '%s'),
+            'grass-script' : ('https://grass.osgeo.org/grass-stable/manuals/libpython/script.html#script.%s', '%s'),
+            'pygrass-gis' : ('https://grass.osgeo.org/grass-stable/manuals/libpython/pygrass.gis.html#pygrass.gis.%s', '%s'),
+            'pygrass-modules' : ('https://grass.osgeo.org/grass-stable/manuals/libpython/pygrass.modules.interface.html#pygrass.modules.interface.module.%s', '%s'),
+            'pygrass-vector' : ('https://grass.osgeo.org/grass-stable/manuals/libpython/pygrass.vector.html#pygrass.vector.%s', '%s'),
+            'pygrass-raster' : ('https://grass.osgeo.org/grass-stable/manuals/libpython/pygrass.raster.html#pygrass.raster.%s', '%s'),
             'python3': ('https://docs.python.org/3/library/%s.html', '%s'),
             }
 
